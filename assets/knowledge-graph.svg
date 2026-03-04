@@ -1,0 +1,100 @@
+<!-- assets/knowledge-graph.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060A12"/>
+      <stop offset="1" stop-color="#081022"/>
+    </linearGradient>
+
+    <filter id="glow2" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      text { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+      .edge { stroke: #6EE7FF; stroke-opacity: 0.35; stroke-width: 1.6; fill: none; }
+      .edge2 { stroke: #7CFFB2; stroke-opacity: 0.25; stroke-width: 1.6; fill: none; }
+      .edgeDash { stroke-dasharray: 6 10; animation: dash 7s linear infinite; }
+      .node { fill: #0B1428; stroke: #6EE7FF; stroke-opacity: 0.7; stroke-width: 1.2; }
+      .node2 { fill: #0B1428; stroke: #7CFFB2; stroke-opacity: 0.65; stroke-width: 1.2; }
+      .node3 { fill: #0B1428; stroke: #C084FC; stroke-opacity: 0.55; stroke-width: 1.2; }
+      .label { fill: #EAF6FF; font-weight: 800; font-size: 16px; }
+      .sub { fill: #C7D2FE; opacity: 0.9; font-size: 12.5px; }
+      .tag { fill: #9AE6FF; opacity: 0.95; font-size: 12px; font-weight: 700; }
+
+      @keyframes dash { to { stroke-dashoffset: -120; } }
+      @keyframes pulse { 0%,100% { transform: scale(1); opacity: 0.9; } 50% { transform: scale(1.06); opacity: 1; } }
+      .pulse { transform-origin: center; animation: pulse 3.4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="520" fill="url(#bg2)"/>
+
+  <!-- edges -->
+  <g filter="url(#glow2)">
+    <path class="edge edgeDash" d="M240,210 C360,120 470,120 590,210"/>
+    <path class="edge edgeDash" d="M240,210 C360,310 470,310 590,210"/>
+    <path class="edge2 edgeDash" d="M590,210 C730,120 830,120 960,190"/>
+    <path class="edge2 edgeDash" d="M590,210 C720,300 820,310 960,260"/>
+    <path class="edge edgeDash" d="M590,210 C560,90 520,70 440,60"/>
+    <path class="edge2 edgeDash" d="M590,210 C610,360 700,400 820,420"/>
+    <path class="edge edgeDash" d="M240,210 C210,90 230,70 300,60"/>
+    <path class="edge2 edgeDash" d="M240,210 C180,350 240,410 340,430"/>
+  </g>
+
+  <!-- nodes -->
+  <g filter="url(#glow2)">
+    <!-- left cluster -->
+    <g class="pulse">
+      <circle class="node2" cx="240" cy="210" r="54"/>
+      <text x="240" y="208" text-anchor="middle" class="label">Healthcare IT</text>
+      <text x="240" y="230" text-anchor="middle" class="sub">Service Owner • Klinik-IT</text>
+    </g>
+
+    <circle class="node" cx="300" cy="60" r="28"/>
+    <text x="300" y="64" text-anchor="middle" class="tag">ITSM</text>
+
+    <circle class="node3" cx="440" cy="60" r="28"/>
+    <text x="440" y="64" text-anchor="middle" class="tag">Security</text>
+
+    <circle class="node" cx="340" cy="430" r="28"/>
+    <text x="340" y="434" text-anchor="middle" class="tag">Ops</text>
+
+    <!-- center hub -->
+    <g class="pulse">
+      <circle class="node" cx="590" cy="210" r="66"/>
+      <text x="590" y="206" text-anchor="middle" class="label">Synapedia</text>
+      <text x="590" y="229" text-anchor="middle" class="sub">Knowledge Platform • Data-first</text>
+    </g>
+
+    <!-- right cluster -->
+    <g class="pulse">
+      <circle class="node2" cx="960" cy="190" r="50"/>
+      <text x="960" y="188" text-anchor="middle" class="label">NeuroCodex</text>
+      <text x="960" y="210" text-anchor="middle" class="sub">Knowledge Graphs</text>
+    </g>
+
+    <g class="pulse">
+      <circle class="node3" cx="960" cy="260" r="46"/>
+      <text x="960" y="258" text-anchor="middle" class="label">AI Pipeline</text>
+      <text x="960" y="280" text-anchor="middle" class="sub">Enrichment • Import</text>
+    </g>
+
+    <circle class="node" cx="820" cy="420" r="32"/>
+    <text x="820" y="424" text-anchor="middle" class="tag">Pharm</text>
+
+    <circle class="node2" cx="340" cy="430" r="0"/> <!-- placeholder to keep layout stable -->
+  </g>
+
+  <!-- Caption -->
+  <g opacity="0.95">
+    <rect x="60" y="470" width="1080" height="32" rx="10" fill="#0B1428" stroke="#6EE7FF" stroke-opacity="0.25"/>
+    <text x="80" y="491" fill="#EAF6FF" font-size="13" font-weight="700">
+      Knowledge Graph Snapshot • Nodes: Platforms, Pipelines, Domains • Style: Pharmacology-Tech Aesthetic
+    </text>
+  </g>
+</svg>
