@@ -1,0 +1,157 @@
+<!-- assets/neural-banner.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060A12"/>
+      <stop offset="0.55" stop-color="#081022"/>
+      <stop offset="1" stop-color="#05070D"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#6EE7FF" stop-opacity="0.20"/>
+      <stop offset="0.45" stop-color="#7CFFB2" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.7 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#9AE6FF" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+
+    <!-- Animated pulse gradient for links -->
+    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7CFFB2" stop-opacity="0.15"/>
+      <stop offset="0.5" stop-color="#6EE7FF" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#C084FC" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <style>
+      .link { stroke: url(#pulse); stroke-width: 1.6; fill: none; stroke-linecap: round; opacity: 0.75; }
+      .node { fill: #0B1428; stroke: #6EE7FF; stroke-opacity: 0.7; stroke-width: 1.2; }
+      .node2 { fill: #0B1428; stroke: #7CFFB2; stroke-opacity: 0.65; stroke-width: 1.2; }
+      .spark { fill: #6EE7FF; opacity: 0.9; }
+      .spark2 { fill: #7CFFB2; opacity: 0.85; }
+
+      /* subtle animated noise-like drift */
+      @keyframes drift { 0% { transform: translate(0,0); } 50% { transform: translate(-6px, 4px); } 100% { transform: translate(0,0); } }
+      @keyframes drift2 { 0% { transform: translate(0,0); } 50% { transform: translate(7px, -5px); } 100% { transform: translate(0,0); } }
+
+      /* moving dash for neural links */
+      @keyframes dash { to { stroke-dashoffset: -120; } }
+      .dashed { stroke-dasharray: 6 10; animation: dash 6s linear infinite; }
+
+      /* node pulse */
+      @keyframes pulseNode { 0%,100% { r: 6.2; opacity: 0.9; } 50% { r: 7.8; opacity: 1; } }
+      @keyframes pulseNode2 { 0%,100% { r: 5.8; opacity: 0.85; } 50% { r: 7.2; opacity: 1; } }
+
+      /* title shimmer */
+      @keyframes shimmer {
+        0% { opacity: 0.65; }
+        50% { opacity: 1; }
+        100% { opacity: 0.65; }
+      }
+      .sub { animation: shimmer 3.6s ease-in-out infinite; }
+
+      text { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+  <rect width="1200" height="320" fill="url(#glow)"/>
+
+  <!-- Floating blobs -->
+  <g filter="url(#softGlow)" opacity="0.85">
+    <circle cx="220" cy="90" r="80" fill="#6EE7FF" opacity="0.10"/>
+    <circle cx="980" cy="120" r="110" fill="#7CFFB2" opacity="0.08"/>
+    <circle cx="760" cy="240" r="95" fill="#C084FC" opacity="0.06"/>
+  </g>
+
+  <!-- Neural Network -->
+  <g filter="url(#softGlow)">
+    <!-- links -->
+    <path class="link dashed" d="M160,220 C270,160 340,240 460,180"/>
+    <path class="link dashed" d="M160,220 C260,260 320,260 430,250"/>
+    <path class="link dashed" d="M260,120 C360,90 460,120 560,90"/>
+    <path class="link dashed" d="M260,120 C360,160 430,170 520,190"/>
+    <path class="link dashed" d="M460,180 C560,140 650,150 760,120"/>
+    <path class="link dashed" d="M430,250 C560,260 650,240 760,210"/>
+    <path class="link dashed" d="M560,90 C650,70 740,90 860,70"/>
+    <path class="link dashed" d="M520,190 C640,170 740,170 860,150"/>
+    <path class="link dashed" d="M760,120 C850,110 930,120 1030,95"/>
+    <path class="link dashed" d="M760,210 C850,230 940,220 1030,200"/>
+    <path class="link dashed" d="M860,70 C950,60 1040,70 1120,60"/>
+    <path class="link dashed" d="M860,150 C950,150 1040,150 1120,150"/>
+
+    <!-- nodes -->
+    <g>
+      <circle class="node2" cx="160" cy="220" r="6.2" style="animation:pulseNode2 2.8s ease-in-out infinite;"/>
+      <circle class="node"  cx="260" cy="120" r="6.2" style="animation:pulseNode 3.2s ease-in-out infinite;"/>
+      <circle class="node"  cx="460" cy="180" r="6.2" style="animation:pulseNode 3.6s ease-in-out infinite;"/>
+      <circle class="node2" cx="430" cy="250" r="6.2" style="animation:pulseNode2 3.0s ease-in-out infinite;"/>
+      <circle class="node"  cx="560" cy="90"  r="6.2" style="animation:pulseNode 3.4s ease-in-out infinite;"/>
+      <circle class="node2" cx="520" cy="190" r="6.2" style="animation:pulseNode2 3.8s ease-in-out infinite;"/>
+      <circle class="node"  cx="760" cy="120" r="6.2" style="animation:pulseNode 3.1s ease-in-out infinite;"/>
+      <circle class="node2" cx="760" cy="210" r="6.2" style="animation:pulseNode2 3.7s ease-in-out infinite;"/>
+      <circle class="node"  cx="860" cy="70"  r="6.2" style="animation:pulseNode 3.9s ease-in-out infinite;"/>
+      <circle class="node2" cx="860" cy="150" r="6.2" style="animation:pulseNode2 3.3s ease-in-out infinite;"/>
+      <circle class="node"  cx="1030" cy="95" r="6.2" style="animation:pulseNode 3.5s ease-in-out infinite;"/>
+      <circle class="node2" cx="1030" cy="200" r="6.2" style="animation:pulseNode2 3.6s ease-in-out infinite;"/>
+      <circle class="node"  cx="1120" cy="60" r="6.2" style="animation:pulseNode 3.0s ease-in-out infinite;"/>
+      <circle class="node2" cx="1120" cy="150" r="6.2" style="animation:pulseNode2 4.1s ease-in-out infinite;"/>
+    </g>
+
+    <!-- tiny sparks (floating) -->
+    <g opacity="0.9">
+      <g style="animation:drift 7s ease-in-out infinite;">
+        <circle class="spark" cx="340" cy="70" r="2.1"/>
+        <circle class="spark2" cx="640" cy="54" r="1.9"/>
+        <circle class="spark" cx="940" cy="260" r="2.2"/>
+      </g>
+      <g style="animation:drift2 8s ease-in-out infinite;">
+        <circle class="spark2" cx="210" cy="265" r="2.0"/>
+        <circle class="spark" cx="720" cy="285" r="1.8"/>
+        <circle class="spark2" cx="1080" cy="230" r="1.9"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <g>
+    <text x="70" y="120" font-size="44" font-weight="800" fill="#EAF6FF" letter-spacing="0.5">
+      Florian Lux
+    </text>
+    <text x="70" y="155" font-size="18" font-weight="600" fill="#9AE6FF" class="sub">
+      Healthcare IT • AI Pipelines • Knowledge Systems • Pharmacology Tech Aesthetic
+    </text>
+
+    <text x="70" y="205" font-size="14" fill="#C7D2FE" opacity="0.9">
+      Building Synapedia & NeuroCodex — structured knowledge platforms with modern web + AI enrichment.
+    </text>
+
+    <text x="70" y="230" font-size="14" fill="#A7F3D0" opacity="0.9">
+      TypeScript • Next.js • Supabase • Cloudflare • Data Pipelines
+    </text>
+  </g>
+
+  <!-- Corner label -->
+  <g opacity="0.9">
+    <rect x="985" y="24" width="190" height="34" rx="10" fill="#0B1428" stroke="#6EE7FF" stroke-opacity="0.35"/>
+    <text x="1002" y="46" font-size="14" font-weight="700" fill="#EAF6FF">
+      Neural Banner • SVG
+    </text>
+  </g>
+</svg>
