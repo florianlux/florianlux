@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="360" viewBox="0 0 1400 360">
+
+<defs>
+
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#04070f"/>
+<stop offset="0.5" stop-color="#061223"/>
+<stop offset="1" stop-color="#02040a"/>
+</linearGradient>
+
+<linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#7CFFB2"/>
+<stop offset="0.5" stop-color="#5FFBF1"/>
+<stop offset="1" stop-color="#6EE7FF"/>
+</linearGradient>
+
+</defs>
+
+<rect width="1400" height="360" fill="url(#bg)"/>
+
+<!-- glow blobs -->
+<circle cx="250" cy="110" r="120" fill="#6EE7FF" opacity="0.08"/>
+<circle cx="1100" cy="120" r="140" fill="#7CFFB2" opacity="0.07"/>
+<circle cx="800" cy="260" r="120" fill="#5FFBF1" opacity="0.05"/>
+
+<!-- neural links -->
+<g stroke="url(#line)" stroke-width="2" fill="none" opacity="0.85">
+
+<path d="M150 240 C300 120 420 260 560 160"/>
+<path d="M150 240 C300 280 430 280 560 240"/>
+<path d="M280 130 C420 90 520 130 640 100"/>
+<path d="M280 130 C420 180 540 200 660 200"/>
+<path d="M560 160 C680 140 780 140 900 120"/>
+<path d="M560 240 C690 260 780 250 920 210"/>
+<path d="M660 100 C780 90 900 90 1020 70"/>
+<path d="M660 200 C780 190 900 190 1040 170"/>
+
+</g>
+
+<!-- nodes -->
+<g fill="#07121f" stroke="#6EE7FF" stroke-width="2">
+
+<circle cx="280" cy="130" r="8"/>
+<circle cx="560" cy="160" r="8"/>
+<circle cx="560" cy="240" r="8"/>
+<circle cx="660" cy="100" r="8"/>
+<circle cx="660" cy="200" r="8"/>
+<circle cx="900" cy="120" r="8"/>
+<circle cx="920" cy="210" r="8"/>
+<circle cx="1020" cy="70" r="8"/>
+<circle cx="1040" cy="170" r="8"/>
+
+</g>
+
+<!-- title -->
+<text x="80" y="140"
+font-size="56"
+font-weight="800"
+fill="#e8fbff"
+font-family="Segoe UI, Arial">
+Florian Lux
+</text>
+
+<text x="80" y="185"
+font-size="20"
+fill="#6EE7FF"
+font-family="Segoe UI, Arial">
+Healthcare IT • AI Pipelines • Knowledge Systems
+</text>
+
+<text x="80" y="225"
+font-size="16"
+fill="#9CFBF4"
+font-family="Segoe UI, Arial">
+Creator of Synapedia • NeuroCodex
+</text>
+
+<text x="80" y="255"
+font-size="15"
+fill="#7CFFB2"
+font-family="Segoe UI, Arial">
+TypeScript • Next.js • Supabase • Cloudflare
+</text>
+
+</svg>
