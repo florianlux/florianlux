@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Instrument_Sans, JetBrains_Mono } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SignalLine from "@/components/SignalLine";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const instrumentSans = Instrument_Sans({
+  variable: "--font-instrument-sans",
   subsets: ["latin"],
+  weight: ["400", "500"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -49,11 +57,12 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="de"
-      className={`${geistSans.variable} h-full antialiased`}
+      lang="en"
+      className={`${instrumentSans.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-full flex-col bg-[#0A0A0F]">
         <Navigation />
+        <SignalLine />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>
