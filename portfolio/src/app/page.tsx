@@ -1,395 +1,202 @@
 import { PersonSchema, WebSiteSchema } from "@/components/StructuredData";
 import FadeIn from "@/components/FadeIn";
-import HeroTimestamp from "@/components/HeroTimestamp";
-import PipelineVisual from "@/components/PipelineVisual";
-import KnowledgeField from "@/components/KnowledgeField";
+import Hero from "@/components/Hero";
+import Image from "next/image";
+import Link from "next/link";
+import ContactSection from "@/components/ContactSection";
+import WebsiteServiceBlock from "@/components/WebsiteServiceBlock";
+import { projects, socialLinks, type Project } from "@/app/site-data";
 
-// ─────────────────────────────────────────────────────────
-// Pipeline arrow — accent-colored, sequentially pulsing
-// ─────────────────────────────────────────────────────────
-function PipelineArrow({ delay }: { delay: number }) {
-  return (
-    <span
-      style={{
-        color: "#00E5A0",
-        animation: `arrow-pulse 3s ease-in-out infinite`,
-        animationDelay: `${delay}s`,
-        display: "inline-block",
-      }}
-    >
-      →
-    </span>
-  );
-}
+const projectCopy: Record<string, string> = {
+  Synapedia:
+    "A public knowledge platform for pharmacology, interactions and connected research.",
+  Neurocodex:
+    "A neuroscience research system for mapping concepts, entities and relationships.",
+};
 
-// ─────────────────────────────────────────────────────────
-// Status indicator — filled circle + label
-// ─────────────────────────────────────────────────────────
-function StatusBadge({ label = "Active" }: { label?: string }) {
+const capabilities = [
+  "Product Interfaces",
+  "Knowledge Systems",
+  "Automation Systems",
+  "AI Tooling",
+];
+
+const contactLinks = [
+  { label: "Projects", href: "/projects" },
+  ...socialLinks.filter((link) => ["GitHub", "Email"].includes(link.label)),
+];
+
+function ProjectPreview({ name }: { name: string }) {
+  if (name === "Synapedia") {
+    return (
+      <div className="project-preview project-preview-synapedia">
+        <Image
+          src="/artifacts/synapedia-product-home.png"
+          alt="Synapedia product interface with search, navigation, and interaction checker"
+          fill
+          className="project-artifact-image project-artifact-synapedia"
+          sizes="(min-width: 1024px) 590px, 90vw"
+        />
+      </div>
+    );
+  }
+
+  if (name === "Neurocodex") {
+    return (
+      <div className="project-preview project-preview-neurocodex">
+        <Image
+          src="/artifacts/neurocodex-architecture-page.png"
+          alt="Neurocodex architecture case study interface"
+          fill
+          className="project-artifact-image project-artifact-neurocodex"
+          sizes="(min-width: 1024px) 420px, 90vw"
+        />
+      </div>
+    );
+  }
+
   return (
-    <div className="flex items-center gap-2">
-      <span
-        className="inline-block h-2 w-2 rounded-full"
-        style={{ background: "#00E5A0" }}
-      />
-      <span className="font-mono text-[12px]" style={{ color: "#00E5A0" }}>
-        {label}
-      </span>
+    <div className="project-preview project-preview-system">
+      <div className="preview-system-card" />
+      <div className="preview-system-card" />
+      <div className="preview-system-card" />
     </div>
   );
 }
 
+function ProjectPanel({
+  project,
+  featured = false,
+}: {
+  project: Project;
+  featured?: boolean;
+}) {
+  const description = projectCopy[project.name] ?? project.description;
+
+  return (
+    <article className={featured ? "portfolio-card portfolio-card-featured" : "portfolio-card"}>
+      <ProjectPreview name={project.name} />
+
+      <div className="relative z-10 mt-auto">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="portfolio-meta">{project.category}</span>
+          <span className="portfolio-status">{project.status}</span>
+        </div>
+
+        <h3 className={featured ? "portfolio-title portfolio-title-featured" : "portfolio-title"}>
+          {project.name}
+        </h3>
+        <p className="portfolio-description">{description}</p>
+
+        <div className="mt-5 flex flex-wrap gap-2">
+          {project.tags.slice(0, 3).map((tag) => (
+            <span key={tag} className="portfolio-tag">
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <div className="mt-7 flex flex-col gap-2.5 sm:flex-row">
+          <Link href={project.href} className="portfolio-link">
+            View project <span aria-hidden="true">-&gt;</span>
+          </Link>
+          {project.externalHref ? (
+            <a
+              href={project.externalHref}
+              target="_blank"
+              rel="noreferrer"
+              className="portfolio-link portfolio-link-muted"
+            >
+              Open live <span aria-hidden="true">-&gt;</span>
+            </a>
+          ) : null}
+        </div>
+      </div>
+    </article>
+  );
+}
+
 export default function HomePage() {
+  const featuredProject = projects.find((project) => project.highlighted);
+  const secondaryProjects = projects.filter((project) => !project.highlighted);
+
   return (
     <>
       <PersonSchema />
       <WebSiteSchema />
+      <Hero />
 
-      {/* ═══════════════════════════════════════════════════
-          HERO — 100vh
-          Dark void. Name in left-third. Pipeline below.
-          ═══════════════════════════════════════════════════ */}
-      <section
-        id="hero"
-        className="relative flex min-h-svh items-center overflow-hidden"
-        style={{ background: "#0A0A0F" }}
-      >
-        {/* Knowledge graph — latent system structure behind the typography */}
-        <KnowledgeField />
-
-        {/* Metadata cluster — upper right */}
-        <HeroTimestamp />
-
-        {/* Content — left-weighted, sits above the graph layer */}
-        <div
-          className="relative w-full px-6 sm:px-10"
-          style={{ paddingLeft: "clamp(24px, 15%, 200px)" }}
-        >
-          {/* Name */}
-          <h1
-            className="font-sans font-normal leading-none tracking-[0.02em]"
-            style={{
-              fontSize: "clamp(48px, 10vw, 140px)",
-              color: "#E8E8EC",
-            }}
-          >
-            Florian Lux
-          </h1>
-
-          {/* Pipeline */}
-          <p
-            className="mt-6 font-mono"
-            style={{ fontSize: "16px", color: "#6A6A75" }}
-          >
-            Search{" "}
-            <PipelineArrow delay={0} />{" "}
-            Signal{" "}
-            <PipelineArrow delay={1} />{" "}
-            Aggregation{" "}
-            <PipelineArrow delay={2} />{" "}
-            Knowledge
-          </p>
-
-          {/* Tagline */}
-          <p
-            className="mt-12 font-sans"
-            style={{ fontSize: "18px", color: "#6A6A75" }}
-          >
-            I build intelligent digital systems.
-          </p>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════
-          VOID — breathing space between sections
-          ═══════════════════════════════════════════════════ */}
-      <div style={{ height: "120px" }} />
-
-      {/* ═══════════════════════════════════════════════════
-          PHILOSOPHY — ~80vh
-          Dense manifesto fragment. Signal line first appears.
-          ═══════════════════════════════════════════════════ */}
-      <section
-        id="philosophy"
-        className="flex items-center px-6 sm:px-10"
-        style={{
-          minHeight: "80vh",
-          paddingLeft: "clamp(24px, 15%, 200px)",
-        }}
-      >
-        <FadeIn direction="none" duration={0.8}>
-          <p
-            className="font-sans leading-relaxed"
-            style={{
-              fontSize: "clamp(18px, 2vw, 22px)",
-              lineHeight: "1.65",
-              maxWidth: "600px",
-              color: "#A0A0AA",
-            }}
-          >
-            Most systems accumulate noise. The interesting work happens in the
-            layer between raw data and structured knowledge — where signal
-            separates from static. I build the infrastructure for that
-            transformation: systems that search, filter, connect, and surface
-            what matters. The pipeline is not a metaphor. It is the architecture.
-          </p>
-        </FadeIn>
-      </section>
-
-      <div style={{ height: "120px" }} />
-
-      {/* ═══════════════════════════════════════════════════
-          SYSTEM VISUAL — 100vh
-          Pipeline diagram. Sequential illuminate on scroll.
-          ═══════════════════════════════════════════════════ */}
-      <section
-        id="pipeline"
-        className="flex min-h-svh flex-col items-center justify-center px-6 sm:px-10"
-      >
-        <div style={{ width: "100%", maxWidth: "900px" }}>
-          <PipelineVisual />
-        </div>
-      </section>
-
-      <div style={{ height: "120px" }} />
-
-      {/* ═══════════════════════════════════════════════════
-          PROJECT: SYNAPEDIA — 100vh
-          ═══════════════════════════════════════════════════ */}
-      <section
-        id="synapedia"
-        className="flex min-h-svh items-center px-6 sm:px-10"
-        style={{ paddingLeft: "clamp(24px, 15%, 200px)" }}
-      >
-        <div className="grid w-full max-w-[1200px] grid-cols-1 gap-16 sm:grid-cols-[3fr_2fr] sm:gap-0">
-          {/* Left column */}
-          <div className="flex flex-col justify-center">
-            <FadeIn direction="none" duration={0.5}>
-              <span
-                className="font-mono text-[14px]"
-                style={{ color: "#00E5A0" }}
-              >
-                001
-              </span>
-            </FadeIn>
-
-            <FadeIn direction="none" duration={0.5} delay={0.2}>
-              <h2
-                className="mt-4 font-sans font-normal leading-none"
-                style={{
-                  fontSize: "clamp(48px, 6vw, 80px)",
-                  color: "#E8E8EC",
-                }}
-              >
-                Synapedia
-              </h2>
-            </FadeIn>
-
-            <FadeIn direction="none" duration={0.5} delay={0.4}>
-              <p
-                className="mt-4 font-mono text-[14px]"
-                style={{ color: "#6A6A75" }}
-              >
-                Knowledge Aggregation System
-              </p>
-            </FadeIn>
-
-            <FadeIn direction="none" duration={0.5} delay={0.45}>
-              <div className="mt-3">
-                <StatusBadge label="Active" />
-              </div>
-            </FadeIn>
-
-            <FadeIn direction="none" duration={0.5} delay={0.6}>
-              <p
-                className="mt-8 font-sans leading-relaxed"
-                style={{
-                  fontSize: "clamp(15px, 1.2vw, 18px)",
-                  lineHeight: "1.65",
-                  maxWidth: "480px",
-                  color: "#A0A0AA",
-                }}
-              >
-                Synapedia connects fragmented knowledge sources into a
-                structured, queryable graph. It transforms search into signal,
-                and signal into understanding — a living system that grows
-                more precise as it ingests.
-              </p>
-            </FadeIn>
-          </div>
-
-          {/* Right column — image placeholder */}
-          <FadeIn direction="none" duration={0.6} delay={0.8}>
-            <div
-              className="flex items-center justify-center sm:pl-12"
-              style={{ minHeight: "280px" }}
-            >
-              <div
-                className="flex w-full max-w-[420px] items-center justify-center rounded-sm"
-                style={{
-                  aspectRatio: "16/10",
-                  background: "rgba(0, 229, 160, 0.03)",
-                  border: "1px solid rgba(0, 229, 160, 0.08)",
-                  boxShadow:
-                    "0 0 60px rgba(0, 229, 160, 0.06), 0 0 120px rgba(0, 229, 160, 0.03)",
-                  filter: "brightness(0.85)",
-                }}
-              >
-                <span
-                  className="font-mono text-[11px]"
-                  style={{ color: "#4A4A55" }}
-                >
-                  synapedia.interface
-                </span>
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
-      <div style={{ height: "120px" }} />
-
-      {/* ═══════════════════════════════════════════════════
-          PROJECT: NEUROCODEX — 100vh
-          ═══════════════════════════════════════════════════ */}
-      <section
-        id="neurocodex"
-        className="flex min-h-svh items-center px-6 sm:px-10"
-        style={{ paddingLeft: "clamp(24px, 15%, 200px)" }}
-      >
-        <div className="grid w-full max-w-[1200px] grid-cols-1 gap-16 sm:grid-cols-[3fr_2fr] sm:gap-0">
-          {/* Left column */}
-          <div className="flex flex-col justify-center">
-            <FadeIn direction="none" duration={0.5}>
-              <span
-                className="font-mono text-[14px]"
-                style={{ color: "#00E5A0" }}
-              >
-                002
-              </span>
-            </FadeIn>
-
-            <FadeIn direction="none" duration={0.5} delay={0.2}>
-              <h2
-                className="mt-4 font-sans font-normal leading-none"
-                style={{
-                  fontSize: "clamp(48px, 6vw, 80px)",
-                  color: "#E8E8EC",
-                }}
-              >
-                Neurocodex
-              </h2>
-            </FadeIn>
-
-            <FadeIn direction="none" duration={0.5} delay={0.4}>
-              <p
-                className="mt-4 font-mono text-[14px]"
-                style={{ color: "#6A6A75" }}
-              >
-                Neuroscience Knowledge Architecture
-              </p>
-            </FadeIn>
-
-            <FadeIn direction="none" duration={0.5} delay={0.45}>
-              <div className="mt-3">
-                <StatusBadge label="In Development" />
-              </div>
-            </FadeIn>
-
-            <FadeIn direction="none" duration={0.5} delay={0.6}>
-              <p
-                className="font-sans leading-relaxed"
-                style={{
-                  marginTop: "32px",
-                  fontSize: "clamp(15px, 1.2vw, 18px)",
-                  lineHeight: "1.65",
-                  maxWidth: "480px",
-                  color: "#A0A0AA",
-                }}
-              >
-                Neurocodex encodes complex neuroscience literature into a
-                navigable, structured architecture. Where Synapedia aggregates,
-                Neurocodex classifies — building the taxonomy layer that makes
-                deep knowledge searchable at scale.
-              </p>
-            </FadeIn>
-          </div>
-
-          {/* Right column — image placeholder */}
-          <FadeIn direction="none" duration={0.6} delay={0.8}>
-            <div
-              className="flex items-center justify-center sm:pl-12"
-              style={{ minHeight: "280px" }}
-            >
-              <div
-                className="flex w-full max-w-[420px] items-center justify-center rounded-sm"
-                style={{
-                  aspectRatio: "16/10",
-                  background: "rgba(0, 229, 160, 0.03)",
-                  border: "1px solid rgba(0, 229, 160, 0.08)",
-                  boxShadow:
-                    "0 0 60px rgba(0, 229, 160, 0.06), 0 0 120px rgba(0, 229, 160, 0.03)",
-                  filter: "brightness(0.85)",
-                }}
-              >
-                <span
-                  className="font-mono text-[11px]"
-                  style={{ color: "#4A4A55" }}
-                >
-                  neurocodex.interface
-                </span>
-              </div>
-            </div>
-          </FadeIn>
-        </div>
-      </section>
-
-      <div style={{ height: "120px" }} />
-
-      {/* ═══════════════════════════════════════════════════
-          ABOUT — ~60vh
-          Minimal. A few lines. Email link.
-          ═══════════════════════════════════════════════════ */}
-      <section
-        id="about"
-        className="flex items-center px-6 sm:px-10"
-        style={{
-          minHeight: "60vh",
-          paddingLeft: "clamp(24px, 15%, 200px)",
-        }}
-      >
-        <FadeIn direction="none" duration={0.8}>
-          <div style={{ maxWidth: "560px" }}>
-            <p
-              className="font-sans leading-relaxed"
-              style={{
-                fontSize: "clamp(15px, 1.2vw, 18px)",
-                lineHeight: "1.65",
-                color: "#A0A0AA",
-              }}
-            >
-              Based in Bonn. Building at the intersection of knowledge systems,
-              information architecture, and applied intelligence. Interested in
-              the layer where data becomes structure and structure becomes
-              understanding.
+      <section className="section-shell portfolio-intro">
+        <FadeIn direction="none" duration={0.65}>
+          <div className="portfolio-intro-line">
+            <span>Featured systems</span>
+            <p>
+              Polished interfaces for dense domains, built around structure,
+              clarity and real product surfaces.
             </p>
-
-            <a
-              href="mailto:hello@florianlux.work"
-              className="mt-10 inline-block font-mono text-[14px] transition-opacity duration-300 hover:opacity-70"
-              style={{
-                color: "#00E5A0",
-                textDecoration: "underline",
-                textUnderlineOffset: "4px",
-              }}
-            >
-              hello@florianlux.work
-            </a>
           </div>
         </FadeIn>
       </section>
 
-      <div style={{ height: "120px" }} />
+      <section
+        id="featured-projects"
+        className="section-shell portfolio-project-section pt-0"
+      >
+        <FadeIn direction="none" duration={0.65}>
+          <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+            <div>
+              <p className="section-kicker">Featured Projects</p>
+              <h2 className="mt-3 max-w-[12ch] text-4xl font-medium leading-[0.96] tracking-normal text-white sm:text-5xl lg:text-6xl">
+                Built systems, presented beautifully.
+              </h2>
+            </div>
+            <Link href="/projects" className="portfolio-index-link">
+              All projects <span aria-hidden="true">-&gt;</span>
+            </Link>
+          </div>
+        </FadeIn>
+
+        <div className="portfolio-project-grid">
+          {featuredProject ? (
+            <FadeIn direction="up" duration={0.7} className="lg:row-span-2">
+              <ProjectPanel project={featuredProject} featured />
+            </FadeIn>
+          ) : null}
+
+          {secondaryProjects.map((project, index) => (
+            <FadeIn key={project.name} direction="up" duration={0.62} delay={index * 0.08}>
+              <ProjectPanel project={project} />
+            </FadeIn>
+          ))}
+
+          <FadeIn direction="up" duration={0.62} delay={0.12}>
+            <Link href="/projects" className="portfolio-card portfolio-card-quiet">
+              <span className="portfolio-meta">Archive</span>
+              <strong>Explore the full project index.</strong>
+              <span className="portfolio-card-arrow" aria-hidden="true">
+                -&gt;
+              </span>
+            </Link>
+          </FadeIn>
+        </div>
+      </section>
+
+      <WebsiteServiceBlock />
+
+      <section className="section-shell capability-section">
+        <FadeIn direction="none" duration={0.65}>
+          <div className="capability-strip">
+            {capabilities.map((capability) => (
+              <div key={capability} className="capability-chip">
+                <span />
+                {capability}
+              </div>
+            ))}
+          </div>
+        </FadeIn>
+      </section>
+
+      <ContactSection links={contactLinks} />
     </>
   );
 }

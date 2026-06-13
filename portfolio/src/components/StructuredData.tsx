@@ -4,17 +4,22 @@ export function PersonSchema() {
     "@type": "Person",
     name: "Florian Lux",
     url: "https://florianlux.dev",
-    jobTitle: "Builder digitaler Systeme",
+    jobTitle: "Knowledge Systems Builder",
     description:
-      "Florian Lux entwickelt intelligente digitale Systeme an der Schnittstelle von Wissen, Design und Technologie.",
+      "Florian Lux builds knowledge systems, intelligence platforms and structured information products.",
     knowsAbout: [
-      "Product Architecture",
-      "SEO Systems",
+      "Knowledge Architecture",
+      "Information Architecture",
       "Data Modeling",
-      "Fullstack Development",
-      "UI Systems",
+      "Knowledge Systems",
+      "Structured Content",
+      "Intelligence Platforms",
     ],
-    sameAs: [],
+    sameAs: [
+      "https://github.com/florianlux",
+      "https://linkedin.com/in/florian-lux-75a198258",
+      "https://synapedia.com",
+    ],
   };
 
   return (
@@ -30,9 +35,60 @@ export function WebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Florian Lux",
-    url: "https://florianlux.work",
+    url: "https://florianlux.dev",
     description:
-      "Persönliche Website von Florian Lux — Builder digitaler Systeme, Produkte & Wissensplattformen.",
+      "Personal website of Florian Lux — knowledge systems builder for structured information products.",
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function ProfessionalServiceSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Florian Lux Websites",
+    url: "https://florianlux.dev/websites",
+    description:
+      "Moderne Websites für lokale Unternehmen, Selbstständige und kleine Marken - persönlich umgesetzt von Florian Lux.",
+    founder: {
+      "@type": "Person",
+      name: "Florian Lux",
+      jobTitle: "Fachinformatiker und Webentwickler",
+      url: "https://florianlux.dev",
+    },
+    areaServed: "Germany",
+    serviceType: [
+      "Website Design",
+      "Webentwicklung",
+      "Responsive Webdesign",
+      "SEO Basics",
+    ],
+    offers: [
+      {
+        "@type": "Offer",
+        name: "Starter Website",
+        priceCurrency: "EUR",
+        price: "299",
+      },
+      {
+        "@type": "Offer",
+        name: "Business Website",
+        priceCurrency: "EUR",
+        price: "599",
+      },
+      {
+        "@type": "Offer",
+        name: "Premium Website",
+        priceCurrency: "EUR",
+        price: "999",
+      },
+    ],
   };
 
   return (

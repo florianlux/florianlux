@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Instrument_Sans, JetBrains_Mono } from "next/font/google";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SignalLine from "@/components/SignalLine";
 import "./globals.css";
 
 const instrumentSans = Instrument_Sans({
@@ -20,11 +19,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: {
     default:
-      "Florian Lux — Builder digitaler Systeme, Produkte & Wissensplattformen",
+      "Florian Lux — Knowledge Systems Builder",
     template: "%s — Florian Lux",
   },
   description:
-    "Florian Lux entwickelt intelligente digitale Systeme an der Schnittstelle von Wissen, Design und Technologie. Projekte: Synapedia, Neurocodex.",
+    "Florian Lux builds knowledge systems, intelligence platforms and structured information products for complex domains.",
   metadataBase: new URL("https://florianlux.dev"),
   alternates: {
     canonical: "/",
@@ -33,16 +32,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_DE",
     siteName: "Florian Lux",
-    title:
-      "Florian Lux — Builder digitaler Systeme, Produkte & Wissensplattformen",
+    title: "Florian Lux — Knowledge Systems Builder",
     description:
-      "Florian Lux entwickelt intelligente digitale Systeme an der Schnittstelle von Wissen, Design und Technologie.",
+      "Knowledge systems, intelligence platforms and structured information products by Florian Lux.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Florian Lux",
     description:
-      "Builder digitaler Systeme an der Schnittstelle von Wissen, Design und Technologie.",
+      "Knowledge systems builder crafting structured information products.",
   },
   robots: {
     index: true,
@@ -60,9 +58,8 @@ export default function RootLayout({
       lang="en"
       className={`${instrumentSans.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-[#0A0A0F]">
+      <body className="flex min-h-full flex-col bg-background text-foreground">
         <Navigation />
-        <SignalLine />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>

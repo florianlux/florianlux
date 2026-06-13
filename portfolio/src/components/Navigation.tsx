@@ -1,118 +1,125 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navigation() {
-  const [visible, setVisible] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const hero = document.getElementById("hero");
-    if (!hero) {
-      setVisible(true);
-      return;
-    }
-
-    // Show nav once hero section scrolls out of view
-    const observer = new IntersectionObserver(
-      ([entry]) => setVisible(!entry.isIntersecting),
-      { threshold: 0.05 }
-    );
-    observer.observe(hero);
-    return () => observer.disconnect();
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const links = [
+    { href: "/#hero", label: "Portfolio" },
+    { href: "/projects", label: "Projekte" },
+    { href: "/websites", label: "Websites" },
+    { href: "/contact", label: "Kontakt" },
+  ];
+
   return (
-    <nav
-      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ease-out ${
-        visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-      }`}
-      style={{
-        height: "48px",
-        background: "rgba(10, 10, 15, 0.92)",
-        backdropFilter: "blur(12px)",
-        WebkitBackdropFilter: "blur(12px)",
-      }}
-    >
-      <div className="flex h-full items-center justify-between px-6 sm:px-10">
-        {/* FL monogram */}
+    <nav className="fixed inset-x-0 top-0 z-50 px-3 py-3 sm:px-5">
+      <div
+        className={`page-shell flex items-center justify-between rounded-full border px-4 py-3 transition-all duration-300 sm:px-5 ${
+          scrolled
+            ? "border-white/10 bg-black/45 shadow-[0_16px_50px_rgba(0,0,0,0.28)]"
+            : "border-white/8 bg-black/28"
+        }`}
+        style={{
+          backdropFilter: "blur(20px)",
+          WebkitBackdropFilter: "blur(20px)",
+        }}
+      >
         <Link
           href="/"
-          className="font-mono text-[14px] transition-opacity duration-300 hover:opacity-70"
-          style={{ color: "#00E5A0" }}
+          className="flex items-center gap-3 transition-opacity duration-300 hover:opacity-80"
         >
-          FL
+          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 font-mono text-xs text-accent">
+            FL
+          </span>
+          <span className="hidden text-sm tracking-[-0.03em] text-white/90 sm:block">
+            Florian Lux
+          </span>
         </Link>
 
-        {/* Desktop links */}
-        <div className="hidden items-center gap-8 sm:flex">
-          <Link
-            href="/#synapedia"
-            className="font-mono text-[12px] transition-colors duration-300"
-            style={{ color: "#A0A0AA" }}
-            onMouseEnter={(e) =>
-              ((e.target as HTMLElement).style.color = "#E8E8EC")
-            }
-            onMouseLeave={(e) =>
-              ((e.target as HTMLElement).style.color = "#A0A0AA")
-            }
+        <div className="hidden items-center gap-1 rounded-full border border-white/6 bg-white/[0.02] p-1 sm:flex">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="rounded-full px-4 py-2 text-sm text-white/68 transition-colors duration-200 hover:bg-white/6 hover:text-white"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
+        <div className="hidden items-center gap-3 sm:flex">
+          <a
+            href="https://github.com/florianlux"
+            target="_blank"
+            rel="noreferrer"
+            className="text-sm text-white/62 transition-colors hover:text-white"
           >
-            Work
-          </Link>
-          <Link
-            href="/#about"
-            className="font-mono text-[12px] transition-colors duration-300"
-            style={{ color: "#A0A0AA" }}
-            onMouseEnter={(e) =>
-              ((e.target as HTMLElement).style.color = "#E8E8EC")
-            }
-            onMouseLeave={(e) =>
-              ((e.target as HTMLElement).style.color = "#A0A0AA")
-            }
-          >
-            About
+            GitHub
+          </a>
+          <Link href="/websites#anfrage" className="premium-button premium-button-secondary px-4 py-2 text-sm">
+            Website anfragen
           </Link>
         </div>
 
-        {/* Mobile toggle */}
         <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="flex items-center sm:hidden"
-          aria-label="Menu"
-          style={{ color: "#A0A0AA" }}
+          type="button"
+          onClick={() => setMobileOpen((open) => !open)}
+          className="inline-flex h-10 items-center justify-center rounded-full border border-white/10 px-4 text-sm text-white/78 sm:hidden"
+          aria-expanded={mobileOpen}
+          aria-label="Toggle menu"
         >
-          <span className="font-mono text-[12px]">
-            {mobileOpen ? "Close" : "Menu"}
-          </span>
+          {mobileOpen ? "Close" : "Menu"}
         </button>
       </div>
 
-      {/* Mobile overlay */}
       {mobileOpen && (
         <div
-          className="flex flex-col gap-6 px-6 py-8 sm:hidden"
+          className="page-shell surface mt-3 rounded-[2rem] p-5 sm:hidden"
           style={{
-            background: "rgba(10, 10, 15, 0.97)",
-            borderTop: "1px solid #1A1A22",
+            backgroundColor: "rgba(10, 10, 15, 0.92)",
           }}
         >
-          <Link
-            href="/#synapedia"
-            onClick={() => setMobileOpen(false)}
-            className="font-mono text-[14px]"
-            style={{ color: "#A0A0AA" }}
-          >
-            Work
-          </Link>
-          <Link
-            href="/#about"
-            onClick={() => setMobileOpen(false)}
-            className="font-mono text-[14px]"
-            style={{ color: "#A0A0AA" }}
-          >
-            About
-          </Link>
+          <div className="flex flex-col gap-2">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="rounded-2xl px-4 py-3 text-base text-white/82 transition-colors hover:bg-white/6"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          <div className="hairline my-4" />
+          <div className="flex items-center justify-between">
+            <a
+              href="https://github.com/florianlux"
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm text-white/65"
+            >
+              GitHub
+            </a>
+            <Link
+              href="/websites#anfrage"
+              onClick={() => setMobileOpen(false)}
+              className="premium-button premium-button-secondary px-4 py-2 text-sm"
+            >
+              Anfrage
+            </Link>
+          </div>
         </div>
       )}
     </nav>

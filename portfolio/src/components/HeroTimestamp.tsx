@@ -2,17 +2,16 @@
 
 import { useEffect, useState } from "react";
 
+function formatTimestamp() {
+  const now = new Date();
+  return now.toISOString().replace("T", " ").slice(0, 19) + " UTC";
+}
+
 export default function HeroTimestamp() {
-  const [timestamp, setTimestamp] = useState("");
+  const [timestamp, setTimestamp] = useState(formatTimestamp);
 
   useEffect(() => {
-    const format = () => {
-      const now = new Date();
-      return now.toISOString().replace("T", " ").slice(0, 19) + " UTC";
-    };
-
-    setTimestamp(format());
-    const interval = setInterval(() => setTimestamp(format()), 1000);
+    const interval = setInterval(() => setTimestamp(formatTimestamp()), 1000);
     return () => clearInterval(interval);
   }, []);
 
