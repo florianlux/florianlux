@@ -55,7 +55,7 @@ export default function Navigation() {
           <span className="brand-mark" aria-hidden="true">fl<span>↗</span></span>
           <span>FLORIAN LUX</span><span className="sr-only"> — home</span>
         </Link>
-        <div className="desktop-nav">{links.map(link => <Link key={link.href} href={link.href}>{link.label}</Link>)}</div>
+        <div className="desktop-nav">{[...links, { href: "/websites", label: "Websites" }].map(link => <Link key={link.href} href={link.href}>{link.label}</Link>)}</div>
         <Link href="/contact" className="nav-contact">Let’s talk <span aria-hidden="true">↗</span></Link>
         <details ref={menu} className="mobile-menu" onToggle={() => setOpen(menu.current?.open ?? false)}
           onKeyDown={event => {

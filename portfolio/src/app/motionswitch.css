@@ -41,7 +41,7 @@
   color: var(--color-foreground); background: var(--color-elevated); box-shadow: inset 0 -2px var(--color-accent);
 }
 .ms-mode-label:hover, .ms-mode-button:hover { color: var(--color-foreground); background: var(--color-surface); }
-.ms-switch input:focus-visible + .ms-mode-label, .ms-mode-button:focus-visible { outline: 2px solid var(--color-accent); outline-offset: -3px; }
+.ms-switch input:focus-visible + .ms-mode-label, .ms-mode-button:focus { outline: 2px solid var(--color-accent); outline-offset: -3px; }
 .ms-hero {
   display: grid; grid-template-columns: 52% 48%; min-height: max(690px, calc(100svh - var(--header-height) - 68px));
   position: relative; isolation: isolate; overflow: hidden; background: var(--color-background); border-bottom: 1px solid var(--color-line);

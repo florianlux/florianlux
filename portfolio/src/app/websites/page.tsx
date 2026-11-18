@@ -19,6 +19,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/websites",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Websites für lokale Unternehmen | Florian Lux",
+    description: "Moderne Websites für lokale Unternehmen, Selbstständige und kleine Marken. Persönlich umgesetzt, mobil optimiert und klar strukturiert.",
+    images: ["/opengraph-image"],
+  },
   openGraph: {
     title: "Websites für lokale Unternehmen | Florian Lux",
     description:

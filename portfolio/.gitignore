@@ -43,7 +43,7 @@ next-env.d.ts
 
 # Local browser QA state and generated visual reports
 /.playwright-cli/
-/output/playwright/
+/output/
 
 # Optional local LUX NOIR QA tooling
 .qa/

@@ -1166,7 +1166,29 @@
 .website-page h1,
 .website-page h2 {
   overflow-wrap: anywhere;
-  hyphens: auto;
+  hyphens: manual;
+}
+.website-page h2 { max-width: 22ch; }
+
+/* Keep the homepage service section at the portfolio's editorial scale. */
+#website-service .website-service-card {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+}
+#website-service .website-service-copy h2 {
+  max-width: 18ch;
+  font-size: 3rem;
+  line-height: 1.08;
+}
+.website-page .floating-ui-card-a {
+  top: auto;
+  bottom: 1.2rem;
+}
+@media (max-width: 767px) {
+  #website-service .website-service-copy h2 { font-size: 2.25rem; }
+  .website-page h2 { max-width: none; }
 }
 .website-page .why-panel > *,
 .website-page .request-form-card > * {

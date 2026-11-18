@@ -1,9 +1,9 @@
-import { readFileSync, readdirSync, mkdirSync, writeFileSync } from "node:fs";
+import { readFileSync, readdirSync, mkdirSync, writeFileSync, existsSync } from "node:fs";
 import { join, dirname, relative, resolve } from "node:path";
 import { createHash } from "node:crypto";
 const root=resolve('.');
 function walk(dir){return readdirSync(dir,{withFileTypes:true}).flatMap(item=>item.isDirectory()?walk(join(dir,item.name)):[join(dir,item.name)]);}
-const files=['src','scripts','tests','brand','public'].flatMap(dir=>walk(dir)).filter(file=>/\.(?:ts|tsx|js|cjs|mjs|json|html|svg|md)$/.test(file));
+const files=['src','scripts','tests','brand','public'].filter(dir=>existsSync(dir)).flatMap(dir=>walk(dir)).filter(file=>/\.(?:ts|tsx|js|cjs|mjs|json|html|svg|md)$/.test(file));
 files.push('package.json','next.config.ts','.env.example');
 const patterns={privateKey:/-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/g,githubToken:/gh[pousr]_[A-Za-z0-9]{30,}/g,googleApiKey:/AIza[A-Za-z0-9_-]{30,}/g,apiKey:/(?<![A-Za-z0-9])sk-(?:live-)?[A-Za-z0-9_-]{24,}/g};
 const findings=[],reviewedFalsePositives=[];

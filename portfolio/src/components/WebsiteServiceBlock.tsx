@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
 import WebsiteMockup from "@/components/WebsiteMockup";
+import "@/app/website-service.css";
 
 const benefits = [
   "Modernes Design statt Baukasten-Look",
@@ -11,7 +12,7 @@ const benefits = [
 
 export default function WebsiteServiceBlock() {
   return (
-    <section id="website-service" className="section-shell website-service-section">
+    <div className="website-page" lang="de"><section id="website-service" className="section-shell website-service-section">
       <FadeIn direction="none" duration={0.7}>
         <div className="website-service-card">
           <div className="website-service-copy">
@@ -55,6 +56,6 @@ export default function WebsiteServiceBlock() {
           </div>
         </div>
       </FadeIn>
-    </section>
+    </section></div>
   );
 }
