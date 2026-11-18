@@ -1,0 +1,38 @@
+{
+  "reviewedAt": "2026-10-11",
+  "operator": {
+    "name": "Florian Lux",
+    "email": "mngmt@synapedia.com",
+    "address": null,
+    "legalForm": null,
+    "register": null,
+    "vatId": null,
+    "mediaResponsible": null
+  },
+  "hosting": {
+    "provider": null,
+    "location": null,
+    "logRetention": null,
+    "processorAgreement": null
+  },
+  "mail": {
+    "receivingProvider": "Google MX observed; mailbox not verified",
+    "retention": null,
+    "processorAgreement": null
+  },
+  "checks": {
+    "operatorAddressConfirmed": false,
+    "impressumReviewed": false,
+    "privacyReviewed": false,
+    "hostingConfirmed": false,
+    "dataFlowsReviewed": false,
+    "mediaRightsConfirmed": false,
+    "fontLicensesVerified": true,
+    "managementMailboxVerified": false,
+    "consentRequirementsReviewed": false,
+    "securityReviewApproved": false,
+    "productionChecksApproved": false,
+    "canonicalOriginConfirmed": false,
+    "ownerPublicReleaseApproved": false
+  }
+}

@@ -1,0 +1,73 @@
+FLORIAN LUX / MOTIONSWITCH / IMPLEMENTATION AUDIT
+11 October 2026 / Europe-Berlin
+
+SOURCE AND ISOLATION
+Existing Next.js application: /Users/florianlux/Developer/florianlux/portfolio.
+Git HEAD: 4b29553; master is one commit ahead of origin/master. The source has
+extensive uncommitted work. Implementation starts from a sanitized copy of its
+CURRENT working files, including the new fonts, components and journal routes.
+It does not rebuild from older HEAD. Baseline hashes are recorded before edits.
+Dependencies are reused. Secrets, .git, .next and private design files are not
+included in the portable source package.
+
+CURRENT STATE / VERIFIED IN SOURCE
+Next.js 16.2.3, React 19.2.4, typed content, local licensed Instrument Sans and
+JetBrains Mono, native mobile disclosure, server-rendered projects and journal,
+Person/WebSite/CreativeWork schema, route canonicals, OG image, sitemap, robots
+and security headers. Twelve existing content routes are retained. There is no
+existing analytics vendor, consent system, runtime data feed, CMS or hosting
+configuration. No real mode-specific footage or complete identity reference
+set is available. The supplied portrait artwork partially covers the face.
+
+KEEP
+Framework, server rendering, local fonts, established content and public links,
+project stage/evidence boundaries, project constellation, all current routes,
+website-service offers, email draft preparation, headers and SEO entity IDs.
+
+IMPROVE
+Hero uses the supplied portrait. The homepage reveals identity, work, story,
+project universe, timeline and NOW. Navigation connects these sections while
+retaining service access. Media reserves its dimensions. Essential content and
+native controls remain available without client-side animation or JavaScript.
+
+REBUILD
+The homepage gains a native five-mode MOTIONSWITCH: BUILD, CREATE, THINK, FIELD,
+ARCHIVE. Modes switch copy, selected work, photo treatment and editorial tone.
+RESEARCH belongs to THINK. FOUNDER, NIGHT and STORY are supported visual modes.
+The source reference image is reused rather than inventing unsupplied footage.
+Radio controls drive CSS state; a small client enhancement adds announcements,
+optional user-enabled audio and a bounded damped spring for fine pointer input.
+
+CONNECT
+Existing evidenced Synapedia, Suite and Neurocodex descriptions are retained.
+Synapedia's public About page was re-read on 11 October 2026 and confirms the
+founder/product/technology role: https://synapedia.com/about . The Suite web
+reader failed in this run, so no new claim or status upgrade was made. Existing
+source evidence stays dated and explicit. NOW is a dated editorial focus from
+this task, not a simulated live feed or release monitor. Timeline entries use
+inspected local commit dates; they document code checkpoints, not launches.
+
+REMOVE FROM THE HOMEPAGE PRESENTATION
+The replaced decorative hero treatment and implementation-heavy engineering
+sales copy. Existing components remain available for safe reuse. No unrelated
+source files, routes, private design assets or service content are removed.
+
+DATA AND PRIVACY
+Typed person, modes, media, timeline, activity and analytics contracts. Only
+Florian is active. No partner is pre-populated. DUO eligibility requires two
+active people with publication consent and separate assets. Future actual duo
+work also needs each person's identity validation. The optional analytics port
+must have explicit consent before reporting any event. No tracking vendor,
+third-party browser request, visitor cookie or analytics storage is introduced.
+
+SOCIAL KIT
+A portable HTML kit supports five modes, five template types and four aspect
+ratios. It allows editing copy, playing a 30-second timing study and exporting
+an SVG still. Process/result slots are explicitly for future real media; this
+is not a finished documentary video. The original portrait artwork is embedded
+unchanged. No awards, audience/revenue metrics or achievements are generated.
+
+PUBLICATION BOUNDARY
+The canonical origin is retained from existing source. Domain ownership and
+hosting were not established. Local checks do not prove production status,
+real-user INP or smooth 60 FPS on all devices. No push or deployment is made.

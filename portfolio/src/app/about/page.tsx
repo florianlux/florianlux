@@ -1,105 +1,110 @@
+import { pageMetadata } from "@/app/page-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
-import FadeIn from "@/components/FadeIn";
-import { BreadcrumbSchema } from "@/components/StructuredData";
-
-export const metadata: Metadata = {
-  title: "Über Florian Lux — Denkweise, Hintergrund & Perspektive",
-  description:
-    "Wer ist Florian Lux? Builder digitaler Systeme mit Fokus auf Wissensarchitektur, Produktdesign und technische Tiefe.",
-  alternates: {
-    canonical: "/about",
-  },
-};
-
+import { BreadcrumbSchema, ProfilePageSchema } from "@/components/StructuredData";
+import MotionPortrait from "@/components/MotionPortrait";
+import { identity } from "@/app/site-data";
+export const metadata: Metadata = pageMetadata(
+  "About",
+  "The person behind the products. Florian Lux, developer and founder of Synapedia, with a background in healthcare IT.",
+  "/about",
+);
 export default function AboutPage() {
   return (
     <>
+      <ProfilePageSchema />
       <BreadcrumbSchema
         items={[
           { name: "Home", href: "/" },
-          { name: "Über mich", href: "/about" },
+          { name: "About", href: "/about" },
         ]}
       />
-
-      <section className="mx-auto max-w-[960px] px-6 pt-32 pb-[120px] sm:pt-40 sm:pb-[160px]">
-        <FadeIn direction="none" duration={0.8}>
-          <Link
-            href="/"
-            className="text-sm text-faint transition-colors duration-300 hover:text-muted"
-          >
-            ← Zurück
-          </Link>
-          <h1 className="mt-12 text-4xl font-semibold tracking-tight sm:text-5xl">
-            Über mich
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg text-muted">
-            Ich denke in Systemen. Nicht, weil es ein Buzzword ist — sondern
-            weil komplexe Probleme selten mit einzelnen Lösungen verschwinden.
-          </p>
-        </FadeIn>
-
-        <div className="mt-24 max-w-2xl space-y-20">
-          <FadeIn direction="none" duration={0.8}>
-            <div>
-              <h2 className="text-2xl font-medium tracking-tight">
-                Wie ich denke
-              </h2>
-              <p className="mt-6 leading-[1.8] text-muted">
-                Mein Ansatz beginnt nie beim Code. Er beginnt bei der Frage: Was
-                ist das eigentliche Problem — und wie sieht ein System aus, das
-                es nicht nur löst, sondern langfristig tragfähig macht? Ich
-                denke in Datenstrukturen, in Relationen, in Informationsflüssen.
-                Bevor eine Zeile Code entsteht, steht die Architektur.
+      <section className="section-shell page-hero">
+        <Link className="text-link" href="/">
+          ← Home
+        </Link>
+        <p className="eyebrow">The person behind the products</p>
+        <h1>
+          A systems mind.
+          <br />A human perspective.
+        </h1>
+        <p className="page-intro">
+          {identity.role} Curious about the space between complex systems and
+          simple, thoughtful experiences.
+        </p>
+      </section>
+      <section className="section-shell page-content">
+        <div className="editorial-grid">
+          <div className="editorial-copy">
+            <section>
+              <h2>Hi, I’m Florian.</h2>
+              <p>
+                I build digital products and knowledge systems. I’m the founder
+                of Synapedia, responsible for its product direction and
+                technology. The project brings my interest in structured
+                information into something people can explore.
               </p>
-              <p className="mt-4 leading-[1.8] text-muted">
-                Diese Denkweise stammt nicht aus einem einzelnen Fach — sie
-                entsteht an der Schnittstelle von Neurowissenschaften,
-                Informationsdesign, Software Engineering und einer tiefen
-                Faszination für die Struktur von Wissen.
+            </section>
+            <section>
+              <h2>Care for the details.</h2>
+              <p>
+                My professional background includes working as a Service Owner
+                in healthcare IT. It shapes my attention to reliable systems,
+                clear responsibilities and the people on the other side of an
+                interface.
               </p>
+            </section>
+            <section>
+              <h2>Curiosity, made tangible.</h2>
+              <p>
+                I’m interested in knowledge graphs, data platforms and the ways
+                design can make dense information more approachable. Synapedia
+                is public; Suite is in development; Neurocodex remains a
+                research direction. Each represents a different stage of that
+                thinking.
+              </p>
+            </section>
+            <section>
+              <h2>Software. Product. Creative technology.</h2>
+              <p>Interfaces, information models and digital experiences. I connect software engineering with product development and considered visual design.</p>
+            </section>
+            <section>
+              <h2>Build. Experiment. Learn. Improve.</h2>
+              <p>
+                A useful product starts with understanding the problem. I care
+                about clear models, considered interfaces and systems that can
+                evolve without becoming harder to understand.
+              </p>
+              <Link href="/projects" className="text-link">
+                Explore the work ↗
+              </Link>
+            </section>
+          </div>
+          <aside>
+            <div className="about-portrait"><MotionPortrait /></div>
+            <p className="eyebrow">DEVELOPER / CREATOR / INDEPENDENT BUILDER</p>
+            <div className="project-evidence">
+              <p className="eyebrow">In the open</p>
+              <div style={{ display: "grid", justifyItems: "start" }}>
+              <a
+                href="https://synapedia.com/about"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-link"
+              >
+                Synapedia team & mission ↗
+              </a>
+              <a
+                href={identity.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-link"
+              >
+                Work on GitHub ↗
+              </a>
+              </div>
             </div>
-          </FadeIn>
-
-          <FadeIn direction="none" duration={0.8}>
-            <div>
-              <h2 className="text-2xl font-medium tracking-tight">
-                Was mich antreibt
-              </h2>
-              <p className="mt-6 leading-[1.8] text-muted">
-                Wissen ist die wertvollste Ressource — aber nur, wenn es
-                zugänglich, strukturiert und verknüpft ist. Die meisten
-                digitalen Produkte behandeln Information als Content. Ich
-                behandle sie als System.
-              </p>
-              <p className="mt-4 leading-[1.8] text-muted">
-                Mich interessiert nicht das nächste Feature oder der nächste
-                Launch. Mich interessiert: Wie baut man etwas, das in fünf
-                Jahren relevanter ist als heute? Diese Frage treibt jedes
-                meiner Projekte.
-              </p>
-            </div>
-          </FadeIn>
-
-          <FadeIn direction="none" duration={0.8}>
-            <div>
-              <h2 className="text-2xl font-medium tracking-tight">
-                Mein Hintergrund
-              </h2>
-              <p className="mt-6 leading-[1.8] text-muted">
-                Ich komme nicht aus einem einzelnen Bereich — und genau das ist
-                der Punkt. Meine Arbeit lebt davon, dass ich SEO nicht als
-                Marketing verstehe, sondern als Architektur. Dass ich Design
-                nicht als Oberfläche sehe, sondern als Systemsprache. Und dass
-                Technologie für mich kein Selbstzweck ist, sondern ein
-                Werkzeug, um Wissensstrukturen lebendig zu machen.
-              </p>
-              <p className="mt-4 leading-[1.8] text-muted">
-                Aktuell arbeite ich an Synapedia und Neurocodex — zwei
-                Projekte, die diesen Ansatz in konkrete Produkte übersetzen.
-              </p>
-            </div>
-          </FadeIn>
+          </aside>
         </div>
       </section>
     </>

@@ -1,69 +1,68 @@
-import type { Metadata } from "next";
-import { Instrument_Sans, JetBrains_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import localFont from "next/font/local";
+import { isPublicRelease } from "./publication";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SignalLine from "@/components/SignalLine";
+import { identity } from "./site-data";
 import "./globals.css";
+import "./motionswitch.css";
 
-const instrumentSans = Instrument_Sans({
+const instrumentSans = localFont({
+  src: "./fonts/instrument-sans-latin.woff2",
   variable: "--font-instrument-sans",
-  subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: "400 700",
+  display: "optional",
+  fallback: ["Arial"],
+  adjustFontFallback: "Arial",
 });
-
-const jetbrainsMono = JetBrains_Mono({
+const jetbrainsMono = localFont({
+  src: "./fonts/jetbrains-mono-latin.woff2",
   variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-  weight: ["400"],
+  weight: "400",
+  display: "swap",
+  preload: false,
 });
-
+export const viewport: Viewport = { themeColor: "#080809" };
 export const metadata: Metadata = {
+  metadataBase: new URL(identity.origin),
   title: {
-    default:
-      "Florian Lux — Builder digitaler Systeme, Produkte & Wissensplattformen",
+    default: "Florian Lux — Developer. Founder. Creative Technologist.",
     template: "%s — Florian Lux",
   },
-  description:
-    "Florian Lux entwickelt intelligente digitale Systeme an der Schnittstelle von Wissen, Design und Technologie. Projekte: Synapedia, Neurocodex.",
-  metadataBase: new URL("https://florianlux.dev"),
-  alternates: {
-    canonical: "/",
-  },
+  description: identity.description,
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    locale: "de_DE",
-    siteName: "Florian Lux",
-    title:
-      "Florian Lux — Builder digitaler Systeme, Produkte & Wissensplattformen",
-    description:
-      "Florian Lux entwickelt intelligente digitale Systeme an der Schnittstelle von Wissen, Design und Technologie.",
+    locale: "en_US",
+    siteName: identity.name,
+    title: "Florian Lux — One person. Multiple modes.",
+    description: identity.description,
+    images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Florian Lux",
-    description:
-      "Builder digitaler Systeme an der Schnittstelle von Wissen, Design und Technologie.",
+    title: "Florian Lux — One person. Multiple modes.",
+    description: identity.description,
+    images: ["/opengraph-image"],
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: isPublicRelease, follow: isPublicRelease },
 };
-
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html
       lang="en"
-      className={`${instrumentSans.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${instrumentSans.variable} ${jetbrainsMono.variable}`}
     >
-      <body className="flex min-h-full flex-col bg-[#0A0A0F]">
+      <body>
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
         <Navigation />
-        <SignalLine />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

@@ -1,68 +1,121 @@
+import { identity, type Project } from "@/app/site-data";
+export function JsonLd({ data }: { data: Record<string, unknown> }) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(data).replace(/</g, "\\u003c"),
+      }}
+    />
+  );
+}
 export function PersonSchema() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Florian Lux",
-    url: "https://florianlux.dev",
-    jobTitle: "Builder digitaler Systeme",
-    description:
-      "Florian Lux entwickelt intelligente digitale Systeme an der Schnittstelle von Wissen, Design und Technologie.",
-    knowsAbout: [
-      "Product Architecture",
-      "SEO Systems",
-      "Data Modeling",
-      "Fullstack Development",
-      "UI Systems",
-    ],
-    sameAs: [],
-  };
-
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    <JsonLd
+      data={{
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": `${identity.origin}/#person`,
+        name: identity.name,
+        url: identity.origin,
+        description: identity.description,
+        jobTitle: "Developer, Founder, Creative Technologist",
+        sameAs: [identity.github, identity.linkedin, identity.instagram],
+        knowsAbout: [
+          "Software engineering",
+          "Information architecture",
+          "Knowledge systems",
+        ],
+      }}
     />
   );
 }
-
 export function WebSiteSchema() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Florian Lux",
-    url: "https://florianlux.work",
-    description:
-      "Persönliche Website von Florian Lux — Builder digitaler Systeme, Produkte & Wissensplattformen.",
-  };
-
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    <JsonLd
+      data={{
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": `${identity.origin}/#website`,
+        name: identity.name,
+        url: identity.origin,
+        inLanguage: "en",
+        description: identity.description,
+        creator: { "@id": `${identity.origin}/#person` },
+      }}
     />
   );
 }
-
+export function ProjectSchema({ project }: { project: Project }) {
+  return (
+    <JsonLd
+      data={{
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "@id": `${identity.origin}${project.href}#project`,
+        name: project.name,
+        url: `${identity.origin}${project.href}`,
+        description: project.description,
+        creativeWorkStatus: project.status,
+        creator: {
+          "@type": "Person",
+          "@id": `${identity.origin}/#person`,
+          name: identity.name,
+          url: identity.origin,
+        },
+        citation: project.evidence.href,
+      }}
+    />
+  );
+}
+export function ProfessionalServiceSchema() {
+  return (
+    <JsonLd
+      data={{
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "@id": `${identity.origin}/websites#service`,
+        name: "Florian Lux Websites",
+        url: `${identity.origin}/websites`,
+        description:
+          "Moderne Websites für lokale Unternehmen, Selbstständige und kleine Marken — persönlich umgesetzt von Florian Lux.",
+        founder: {
+          "@type": "Person",
+          "@id": `${identity.origin}/#person`,
+          name: identity.name,
+        },
+        areaServed: "Germany",
+        serviceType: [
+          "Website Design",
+          "Webentwicklung",
+          "Responsive Webdesign",
+          "SEO Basics",
+        ],
+      }}
+    />
+  );
+}
 export function BreadcrumbSchema({
   items,
 }: {
   items: { name: string; href: string }[];
 }) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.name,
-      item: `https://florianlux.dev${item.href}`,
-    })),
-  };
-
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    <JsonLd
+      data={{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: items.map((item, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: item.name,
+          item: `${identity.origin}${item.href}`,
+        })),
+      }}
     />
   );
+}
+
+export function ProfilePageSchema() {
+  return <JsonLd data={{ "@context": "https://schema.org", "@type": "ProfilePage", "@id": `${identity.origin}/about#profile`, url: `${identity.origin}/about`, name: `${identity.name} — About`, mainEntity: { "@type": "Person", "@id": `${identity.origin}/#person`, name: identity.name, url: identity.origin } }} />;
 }

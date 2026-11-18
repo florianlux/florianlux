@@ -1,120 +1,79 @@
 "use client";
-
 import Link from "next/link";
-import { useState, useEffect } from "react";
-
+import { useEffect, useRef, useState } from "react";
+const links = [
+  { href: "/#selected-work", label: "Work" },
+  { href: "/#story", label: "Story" },
+  { href: "/#archive", label: "Archive" },
+  { href: "/#now", label: "Now" },
+];
 export default function Navigation() {
-  const [visible, setVisible] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
-
+  const menu = useRef<HTMLDetailsElement>(null);
+  const sentinel = useRef<HTMLSpanElement>(null);
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  function closeMenu(returnFocus = false) {
+    if (menu.current) menu.current.open = false;
+    setOpen(false);
+    if (returnFocus) menu.current?.querySelector("summary")?.focus();
+  }
   useEffect(() => {
-    const hero = document.getElementById("hero");
-    if (!hero) {
-      setVisible(true);
-      return;
-    }
-
-    // Show nav once hero section scrolls out of view
-    const observer = new IntersectionObserver(
-      ([entry]) => setVisible(!entry.isIntersecting),
-      { threshold: 0.05 }
-    );
-    observer.observe(hero);
+    if (!sentinel.current || !("IntersectionObserver" in window)) return;
+    const observer = new IntersectionObserver(([entry]) => setScrolled(!entry.isIntersecting));
+    observer.observe(sentinel.current);
     return () => observer.disconnect();
   }, []);
-
-  return (
-    <nav
-      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ease-out ${
-        visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-      }`}
-      style={{
-        height: "48px",
-        background: "rgba(10, 10, 15, 0.92)",
-        backdropFilter: "blur(12px)",
-        WebkitBackdropFilter: "blur(12px)",
-      }}
-    >
-      <div className="flex h-full items-center justify-between px-6 sm:px-10">
-        {/* FL monogram */}
-        <Link
-          href="/"
-          className="font-mono text-[14px] transition-opacity duration-300 hover:opacity-70"
-          style={{ color: "#00E5A0" }}
-        >
-          FL
+  useEffect(() => {
+    const compact = window.matchMedia("(max-width: 800px)");
+    function resize() { if (!compact.matches) closeMenu(); }
+    compact.addEventListener("change", resize);
+    return () => compact.removeEventListener("change", resize);
+  }, []);
+  useEffect(() => {
+    if (!open) return;
+    const body = document.body;
+    const previousOverflow = body.style.overflow;
+    const previousPadding = body.style.paddingRight;
+    const gap = window.innerWidth - document.documentElement.clientWidth;
+    const background = Array.from(document.querySelectorAll<HTMLElement>("main, .site-footer"));
+    const priorInert = background.map(el => el.inert);
+    body.style.overflow = "hidden";
+    if (gap > 0) body.style.paddingRight = `${parseFloat(getComputedStyle(body).paddingRight) + gap}px`;
+    background.forEach(el => { el.inert = true; });
+    menu.current?.querySelector<HTMLAnchorElement>("a")?.focus();
+    return () => {
+      body.style.overflow = previousOverflow;
+      body.style.paddingRight = previousPadding;
+      background.forEach((el, i) => { el.inert = priorInert[i]; });
+    };
+  }, [open]);
+  return <>
+    <span ref={sentinel} className="header-sentinel" aria-hidden="true" />
+    <header className="site-header" data-scrolled={scrolled}>
+      <nav className="page-shell nav-inner" aria-label="Main navigation">
+        <Link href="/" className="brand" onClick={() => closeMenu()}>
+          <span className="brand-mark" aria-hidden="true">fl<span>↗</span></span>
+          <span>FLORIAN LUX</span><span className="sr-only"> — home</span>
         </Link>
-
-        {/* Desktop links */}
-        <div className="hidden items-center gap-8 sm:flex">
-          <Link
-            href="/#synapedia"
-            className="font-mono text-[12px] transition-colors duration-300"
-            style={{ color: "#A0A0AA" }}
-            onMouseEnter={(e) =>
-              ((e.target as HTMLElement).style.color = "#E8E8EC")
-            }
-            onMouseLeave={(e) =>
-              ((e.target as HTMLElement).style.color = "#A0A0AA")
-            }
-          >
-            Work
-          </Link>
-          <Link
-            href="/#about"
-            className="font-mono text-[12px] transition-colors duration-300"
-            style={{ color: "#A0A0AA" }}
-            onMouseEnter={(e) =>
-              ((e.target as HTMLElement).style.color = "#E8E8EC")
-            }
-            onMouseLeave={(e) =>
-              ((e.target as HTMLElement).style.color = "#A0A0AA")
-            }
-          >
-            About
-          </Link>
-        </div>
-
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setMobileOpen(!mobileOpen)}
-          className="flex items-center sm:hidden"
-          aria-label="Menu"
-          style={{ color: "#A0A0AA" }}
-        >
-          <span className="font-mono text-[12px]">
-            {mobileOpen ? "Close" : "Menu"}
-          </span>
-        </button>
-      </div>
-
-      {/* Mobile overlay */}
-      {mobileOpen && (
-        <div
-          className="flex flex-col gap-6 px-6 py-8 sm:hidden"
-          style={{
-            background: "rgba(10, 10, 15, 0.97)",
-            borderTop: "1px solid #1A1A22",
-          }}
-        >
-          <Link
-            href="/#synapedia"
-            onClick={() => setMobileOpen(false)}
-            className="font-mono text-[14px]"
-            style={{ color: "#A0A0AA" }}
-          >
-            Work
-          </Link>
-          <Link
-            href="/#about"
-            onClick={() => setMobileOpen(false)}
-            className="font-mono text-[14px]"
-            style={{ color: "#A0A0AA" }}
-          >
-            About
-          </Link>
-        </div>
-      )}
-    </nav>
-  );
+        <div className="desktop-nav">{[...links, { href: "/websites", label: "Websites" }].map(link => <Link key={link.href} href={link.href}>{link.label}</Link>)}</div>
+        <Link href="/contact" className="nav-contact">Let’s talk <span aria-hidden="true">↗</span></Link>
+        <details ref={menu} className="mobile-menu" onToggle={() => setOpen(menu.current?.open ?? false)}
+          onKeyDown={event => {
+            if (event.key === "Escape") { event.preventDefault(); closeMenu(true); return; }
+            if (event.key !== "Tab" || !menu.current?.open) return;
+            const focusable = Array.from(menu.current.querySelectorAll<HTMLElement>("summary, a[href]"));
+            const first = focusable[0], last = focusable.at(-1);
+            if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+            else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+          }}>
+          <summary aria-controls="mobile-navigation" aria-expanded={open}>Menu <span aria-hidden="true">+</span></summary>
+          <div id="mobile-navigation" className="mobile-links">
+            <p className="eyebrow">FLORIAN LUX / INDEX</p>
+            {[...links, { href: "/projects", label: "All projects" }, { href: "/websites", label: "Website services" }, { href: "/contact", label: "Let’s talk" }].map((link, i) => <Link key={link.href} href={link.href} onClick={() => closeMenu()}><span><small aria-hidden="true">{String(i + 1).padStart(2, "0")}</small>{link.label}</span><span aria-hidden="true">↗</span></Link>)}
+            <p className="mobile-menu-note">BUILD / CREATE / EXPLORE</p>
+          </div>
+        </details>
+      </nav>
+    </header>
+  </>;
 }

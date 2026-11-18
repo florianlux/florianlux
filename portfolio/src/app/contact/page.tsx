@@ -1,54 +1,80 @@
+import { pageMetadata } from "@/app/page-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
-import FadeIn from "@/components/FadeIn";
+import ContactForm from "@/components/ContactForm";
+import { contactConfiguration } from "@/lib/contact-service";
+import evidence from "../release-evidence.json";
 import { BreadcrumbSchema } from "@/components/StructuredData";
-
-export const metadata: Metadata = {
-  title: "Kontakt — Florian Lux",
-  description:
-    "Kontakt zu Florian Lux aufnehmen. Offen für Gespräche über digitale Systeme, Produktarchitektur und Zusammenarbeit.",
-  alternates: {
-    canonical: "/contact",
-  },
-};
-
+import { identity, socialLinks } from "@/app/site-data";
+export const dynamic = "force-dynamic";
+export const metadata: Metadata = pageMetadata(
+  "Connect",
+  "Connect with Florian Lux about thoughtful digital products, knowledge systems or a website for your business.",
+  "/contact",
+);
 export default function ContactPage() {
+  const reviewed = evidence.checks.privacyReviewed && evidence.checks.managementMailboxVerified && evidence.checks.dataFlowsReviewed;
+  const enabled = !!contactConfiguration(process.env, reviewed);
   return (
     <>
       <BreadcrumbSchema
         items={[
           { name: "Home", href: "/" },
-          { name: "Kontakt", href: "/contact" },
+          { name: "Connect", href: "/contact" },
         ]}
       />
-
-      <section className="mx-auto max-w-[960px] px-6 pt-32 pb-[120px] sm:pt-40 sm:pb-[160px]">
-        <FadeIn direction="none" duration={0.8}>
-          <Link
-            href="/"
-            className="text-sm text-faint transition-colors duration-300 hover:text-muted"
-          >
-            ← Zurück
-          </Link>
-
-          <p className="mt-20 text-sm uppercase tracking-[0.2em] text-faint">
-            Kontakt
-          </p>
-          <h1 className="mt-6 text-3xl font-semibold tracking-tight sm:text-[40px]">
-            Lassen Sie uns sprechen.
-          </h1>
-          <p className="mt-8 max-w-xl leading-[1.8] text-muted">
-            Der beste Weg ist eine kurze, klare Nachricht. Kein
-            Kontaktformular — eine direkte E-Mail ist persönlicher und
-            effizienter.
-          </p>
-          <a
-            href="mailto:hello@florianlux.dev"
-            className="mt-8 inline-block border-b border-transparent text-base text-muted transition-all duration-400 hover:border-faint hover:text-foreground"
-          >
-            hello@florianlux.dev
-          </a>
-        </FadeIn>
+      <section className="section-shell page-hero">
+        <Link href="/" className="text-link">
+          ← Home
+        </Link>
+        <p className="eyebrow">A conversation is a good beginning.</p>
+        <h1>What’s on your mind?</h1>
+        <p className="page-intro">
+          Have a thoughtful project, an interesting problem, or a different
+          perspective? I’d like to hear it.
+        </p>
+        <a className="contact-email" href={`mailto:${identity.email}`}>
+          {identity.email} <span aria-hidden="true">↗</span>
+        </a>
+        <p className="body-copy">
+          Opens your email app. Tell me what you’re building and the outcome you
+          have in mind.
+        </p>
+      </section>
+      <section className="section-shell"><ContactForm enabled={enabled} email={identity.email} /></section>
+      <section className="section-shell page-content">
+        <div className="editorial-grid">
+          <div>
+            <p className="eyebrow">Find me elsewhere</p>
+            <div className="connect-links">
+              {socialLinks
+                .filter((link) => link.label !== "Email")
+                .map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.label}
+                    <span aria-hidden="true">↗</span>
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                ))}
+            </div>
+          </div>
+          <div>
+            <p className="eyebrow">For your business</p>
+            <h2 className="display-heading">A website with intention.</h2>
+            <p className="section-description">
+              Persönlich entwickelte Websites für lokale Unternehmen,
+              Selbstständige und kleine Marken.
+            </p>
+            <Link className="text-link" href="/websites">
+              Website-Service ansehen ↗
+            </Link>
+          </div>
+        </div>
       </section>
     </>
   );
