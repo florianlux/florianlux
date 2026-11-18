@@ -451,7 +451,7 @@
       }
     ]
   },
-  "deployment": "NOT_DEPLOYED",
+  "deployment": "NOT_DEPLOYED to production; existing automation created a nonfunctional deploy preview",
   "cleanCheckout": {
     "commit": "4d31def7f48515be4dea29bff65cb6f422905a47",
     "path": "/private/tmp/florianlux-consolidation-w8QSZY/candidate",
@@ -473,6 +473,33 @@
   },
   "github": {
     "draftPR": "https://github.com/florianlux/florianlux/pull/2",
-    "ci": "NOT_RUN: no workflows or statuses observed for application commit"
+    "actions": "NOT_RUN: no workflow runs observed",
+    "netlifyStatus": "success for 2ef0630; application acceptance FAIL"
+  },
+  "hosting": {
+    "previewDeploy": "6afddb538d71a7d004588a68",
+    "commit": "2ef0630e3d07c662748bf8b9316d3ae91b35f847",
+    "context": "deploy-preview",
+    "trigger": "existing PR automation, not a manual deploy",
+    "routes": [
+      {
+        "path": "/",
+        "status": 404
+      },
+      {
+        "path": "/websites",
+        "status": 404
+      },
+      {
+        "path": "/contact",
+        "status": 404
+      }
+    ],
+    "passwordRequired": false,
+    "teamSSORequired": false,
+    "remoteAcceptance": "FAIL",
+    "productionDeploy": "69df1641f73c1000081672f6",
+    "productionCommit": "829d9943777e4900e3de733adc03ae79347aba0f",
+    "productionChanged": false
   }
 }

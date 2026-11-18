@@ -123,8 +123,11 @@ Public release remains BLOCKED by missing operator address, legal/privacy review
 - Focused fixes: `4d31def fix(portfolio): validate website inquiries and harden service integration`.
 - This report, inventory and validation receipt are the following documentation commit; resolve its exact SHA with `git log -1 -- docs/PORTFOLIO_WEBSITES_CONSOLIDATION.md`.
 - Draft PR: [florianlux/florianlux#2](https://github.com/florianlux/florianlux/pull/2), target `master`.
-- GitHub workflow/status queries returned no runs or statuses for the reviewed source commit. **CI_STATUS=NOT_RUN**. There is no observed billing failure; `CI_UNAVAILABLE_BILLING` is therefore not claimed.
-- No merge, provider activation or deployment performed. **DEPLOYMENT_STATUS=NOT_DEPLOYED**.
+- GitHub Actions queries returned no runs for the reviewed commits. **GITHUB_ACTIONS=NOT_RUN**. There is no observed billing failure; `CI_UNAVAILABLE_BILLING` is therefore not claimed.
+- The existing Netlify integration automatically created a `deploy-preview` when the draft PR was pushed. Its status check reports success for `2ef0630`, but read-only requests to `/`, `/websites` and `/contact` all returned **404**. This status is not a passing application smoke test. No app CSP was present; Netlify returned `X-Robots-Tag: noindex`.
+- Observed preview deploy: `6afddb538d71a7d004588a68`; [Netlify deploy details](https://app.netlify.com/projects/adorable-bunny-27729a/deploys/6afddb538d71a7d004588a68). It reports an unknown framework and no server/functions or processed header rules. The exact host build/publish settings were not returned by the available read API; a wrongly targeted source/static publish is an inference, not a verified setting.
+- Netlify project access controls report no password requirement or team SSO. A hosted preview therefore does not satisfy the documented authenticated-preview requirement. Hosting configuration and preview access control are **BLOCKED** pending an intentional host review; no paid feature or security setting was changed.
+- Production remains at deploy `69df1641f73c1000081672f6`, commit `829d9943777e4900e3de733adc03ae79347aba0f`, originally published on 15 April 2026. The candidate was not published to production. **DEPLOYMENT_STATUS=NOT_DEPLOYED (production); AUTOMATIC_PREVIEW=FAIL (routes)**.
 
 ## Rollback and Next Action
 
@@ -132,4 +135,4 @@ For this incremental fix alone, inspect `git show 4d31def` and revert that commi
 
 To recover the complete original local state, create a separate recovery checkout from `history.bundle` at `4b29553`, apply the saved nonempty tracked patch, then extract `worktree-files.tar.gz` there and compare every file with `manifest.json`. The original index was empty. Do not restore over subsequent work without first checking hashes and differences.
 
-The next action is review of the draft PR and completion of the existing legal, hosting, mailbox and media evidence plus the outstanding development-tooling security review. Production release approval is a later, explicit step. The technically validated candidate is ready for that review, with the listed limitations.
+The next action is review of the draft PR, correction of the existing host build/publish setup with authenticated preview access, and completion of legal, hosting, mailbox and media evidence plus the outstanding development-tooling security review. Production release approval is a later, explicit step. The locally validated candidate is ready for that review; hosted acceptance and public release remain blocked.

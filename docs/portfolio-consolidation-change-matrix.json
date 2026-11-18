@@ -51,13 +51,20 @@
       ],
       "statusBefore": "new during consolidation",
       "snapshotSha256": null,
-      "currentSha256": "4b08b7036fad870d41480145650bd215bccd42de7e715fbbe073574d4b79aabf",
+      "currentSha256": "214505b97ff7e8fe52bb07955e5f47acbeec70f85f7205290d46aefc4ec21472",
       "unchangedFromSnapshot": false,
       "include": true,
       "note": "Reviewed application integration or supporting documentation.",
       "hunkPolicy": "Single work package; complete reviewed hunks only.",
       "baselineHunks": [],
-      "reviewedHunks": []
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,138 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
     },
     {
       "file": "docs/lux-noir-v2/CURRENT_STATE_REPORT.md",
@@ -270,7 +277,14 @@
       "note": "Reviewed application integration or supporting documentation.",
       "hunkPolicy": "Single work package; complete reviewed hunks only.",
       "baselineHunks": [],
-      "reviewedHunks": []
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,6459 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
     },
     {
       "file": "docs/portfolio-integrations.md",
@@ -323,13 +337,20 @@
       ],
       "statusBefore": "new during consolidation",
       "snapshotSha256": null,
-      "currentSha256": "ca6a7e5c57d22a672f834046215a4c46b963ba45311e677f492f5eae64d9c556",
+      "currentSha256": "fae32eb50a073960d7b14e7dc61c78b9c588c37d772195a3308948c2e633eec5",
       "unchangedFromSnapshot": false,
       "include": true,
       "note": "Reviewed application integration or supporting documentation.",
       "hunkPolicy": "Single work package; complete reviewed hunks only.",
       "baselineHunks": [],
-      "reviewedHunks": []
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,505 @@",
+          "categories": [
+            "A"
+          ]
+        }
+      ]
     },
     {
       "file": "portfolio/.env.example",
