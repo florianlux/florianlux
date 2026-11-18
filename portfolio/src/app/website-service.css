@@ -1,0 +1,1174 @@
+.website-page .website-service-section {
+  padding-block-start: clamp(3rem, 6vw, 5rem);
+}
+
+.website-page .website-service-card {
+  position: relative;
+  display: grid;
+  gap: 1.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.095);
+  border-radius: 1.35rem;
+  padding: 1.25rem;
+  background:
+    radial-gradient(
+      ellipse 72% 52% at 78% 8%,
+      rgba(184, 205, 226, 0.12),
+      transparent 68%
+    ),
+    radial-gradient(
+      ellipse 58% 48% at 14% 100%,
+      rgba(228, 184, 109, 0.08),
+      transparent 72%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.072),
+      rgba(255, 255, 255, 0.018)
+    ),
+    #0d0f17;
+  box-shadow: none;
+}
+
+.website-page .website-service-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.032) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.032) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: linear-gradient(
+    110deg,
+    transparent 0%,
+    black 28%,
+    transparent 82%
+  );
+  opacity: 0.58;
+  pointer-events: none;
+}
+
+.website-page .website-service-copy,
+.website-page .website-service-benefits,
+.website-page .website-service-visual {
+  position: relative;
+  z-index: 1;
+}
+
+.website-page .website-service-copy h2,
+.website-page .websites-hero h1,
+.website-page .section-split-heading h2,
+.website-page .process-panel h2,
+.website-page .why-panel h2,
+.website-page .request-form-card h2,
+.website-page .websites-final-cta h2 {
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+.website-page .website-service-copy h2 {
+  margin-top: 1rem;
+  max-width: 12ch;
+  font-size: 2.65rem;
+}
+
+.website-page .website-service-copy > p:not(.section-kicker) {
+  margin-top: 1.2rem;
+  max-width: 36rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(232, 232, 236, 0.68);
+}
+
+.website-page .website-service-actions,
+.website-page .websites-hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.website-page .website-service-benefits {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.website-page .website-benefit-card {
+  display: flex;
+  min-height: 4.5rem;
+  align-items: center;
+  gap: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.85rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.website-page .website-benefit-card span,
+.website-page .feature-tile span,
+.website-page .audience-card span {
+  flex: 0 0 auto;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+  box-shadow: none;
+}
+
+.website-page .website-benefit-card p {
+  font-size: 0.98rem;
+  line-height: 1.4;
+  color: rgba(232, 232, 236, 0.82);
+}
+
+.website-page .website-service-visual {
+  min-width: 0;
+}
+
+.website-page .before-after-card {
+  position: absolute;
+  z-index: 4;
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.9rem;
+  padding: 0.8rem;
+  background: rgba(10, 12, 18, 0.78);
+  box-shadow: none;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.website-page .before-after-card span {
+  display: block;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(232, 232, 236, 0.46);
+}
+
+.website-page .before-card {
+  left: 0;
+  bottom: 2rem;
+  width: 9rem;
+}
+
+.website-page .before-card i {
+  display: block;
+  height: 0.42rem;
+  margin-top: 0.6rem;
+  border-radius: 999px;
+  background: rgba(232, 232, 236, 0.18);
+}
+
+.website-page .before-card i:nth-child(3) {
+  width: 74%;
+}
+
+.website-page .before-card i:nth-child(4) {
+  width: 48%;
+}
+
+.website-page .after-card {
+  right: 0;
+  top: 1.5rem;
+}
+
+.website-page .after-card strong {
+  display: block;
+  margin-top: 0.45rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.website-page .website-mockup {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.18;
+  min-height: 19rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(
+      ellipse 42% 38% at 82% 18%,
+      rgba(255, 255, 255, 0.13),
+      transparent 72%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.085),
+      rgba(255, 255, 255, 0.02)
+    ),
+    #11131a;
+  box-shadow: none;
+}
+
+.website-page .website-mockup-compact {
+  min-height: 15.5rem;
+  aspect-ratio: 1.28;
+}
+
+.website-page .website-mockup::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.08),
+      transparent 28%,
+      transparent 72%,
+      rgba(184, 205, 226, 0.055)
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    30px 30px,
+    30px 30px;
+  pointer-events: none;
+}
+
+.website-page .website-mockup-streetfood {
+  background:
+    radial-gradient(
+      ellipse 48% 42% at 80% 18%,
+      rgba(228, 184, 109, 0.24),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 44% 46% at 16% 80%,
+      rgba(184, 205, 226, 0.12),
+      transparent 72%
+    ),
+    #121018;
+}
+
+.website-page .website-mockup-beauty {
+  background:
+    radial-gradient(
+      ellipse 50% 42% at 78% 18%,
+      rgba(255, 174, 214, 0.18),
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 44% 48% at 12% 84%,
+      rgba(184, 205, 226, 0.1),
+      transparent 74%
+    ),
+    #12121a;
+}
+
+.website-page .website-mockup-senior {
+  background:
+    radial-gradient(
+      ellipse 50% 42% at 78% 18%,
+      rgba(119, 176, 255, 0.16),
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 44% 48% at 12% 84%,
+      rgba(228, 184, 109, 0.12),
+      transparent 74%
+    ),
+    #10131a;
+}
+
+.website-page .website-mockup-brand {
+  background:
+    radial-gradient(
+      ellipse 50% 42% at 78% 18%,
+      rgba(184, 205, 226, 0.15),
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 44% 48% at 12% 84%,
+      rgba(255, 255, 255, 0.07),
+      transparent 74%
+    ),
+    #0d1118;
+}
+
+.website-page .website-window-bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.38rem;
+  height: 2.4rem;
+  padding-inline: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.website-page .website-window-bar span {
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: rgba(232, 232, 236, 0.28);
+}
+
+.website-page .website-window-bar i {
+  margin-left: auto;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.62rem;
+  font-style: normal;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(232, 232, 236, 0.42);
+}
+
+.website-page .website-mockup-hero {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 5.5rem;
+  gap: 1rem;
+  padding: 1.1rem;
+}
+
+.website-page .website-mockup-hero b {
+  display: block;
+  width: 4.8rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: rgba(184, 205, 226, 0.62);
+}
+
+.website-page .website-mockup-hero strong {
+  display: block;
+  margin-top: 0.8rem;
+  max-width: 8ch;
+  font-size: 2.15rem;
+  line-height: 0.9;
+  font-weight: 600;
+  color: #fff;
+}
+
+.website-page .website-mockup-hero p {
+  width: 82%;
+  height: 0.58rem;
+  margin-top: 0.9rem;
+  border-radius: 999px;
+  background: rgba(232, 232, 236, 0.25);
+}
+
+.website-page .website-mockup-hero em {
+  display: block;
+  aspect-ratio: 0.78;
+  border-radius: 1rem;
+  background:
+    radial-gradient(
+      circle at 48% 36%,
+      rgba(255, 255, 255, 0.78),
+      transparent 18%
+    ),
+    radial-gradient(
+      circle at 45% 48%,
+      rgba(228, 184, 109, 0.76),
+      transparent 26%
+    ),
+    linear-gradient(
+      160deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.035)
+    );
+  box-shadow: none;
+}
+
+.website-page .website-mockup-body {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 0.92fr 1fr;
+  gap: 0.8rem;
+  padding: 0 1.1rem 1.1rem;
+}
+
+.website-page .website-mockup-panel,
+.website-page .website-mockup-list {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.website-page .website-mockup-panel {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.8rem;
+}
+
+.website-page .website-mockup-panel span {
+  min-height: 1.35rem;
+  border-radius: 0.55rem;
+  background: rgba(255, 255, 255, 0.075);
+}
+
+.website-page .website-mockup-list {
+  display: grid;
+  gap: 0.55rem;
+  padding: 0.8rem;
+}
+
+.website-page .website-mockup-list i {
+  display: block;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: rgba(232, 232, 236, 0.22);
+}
+
+.website-page .website-mockup-list i:nth-child(2) {
+  width: 72%;
+}
+
+.website-page .website-mockup-list i:nth-child(3) {
+  width: 52%;
+}
+
+.website-page .website-mockup-phone {
+  position: absolute;
+  z-index: 3;
+  right: 1rem;
+  bottom: 1rem;
+  width: 5.2rem;
+  height: 8.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 0.72rem 0.5rem;
+  background: rgba(6, 8, 13, 0.78);
+  box-shadow: none;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.website-page .website-mockup-phone span,
+.website-page .website-mockup-phone i {
+  display: block;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.website-page .website-mockup-phone span {
+  width: 2.2rem;
+  height: 0.35rem;
+  margin-inline: auto;
+}
+
+.website-page .website-mockup-phone i {
+  height: 1.9rem;
+  margin-top: 0.72rem;
+  border-radius: 0.65rem;
+}
+
+.website-page .websites-hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: 6.75rem 4rem;
+  background:
+    radial-gradient(
+      ellipse 70% 50% at 72% 12%,
+      rgba(184, 205, 226, 0.105),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 56% 44% at 15% 88%,
+      rgba(228, 184, 109, 0.07),
+      transparent 74%
+    ),
+    #07080c;
+}
+
+.website-page .websites-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 38px 38px;
+  mask-image: radial-gradient(ellipse at 50% 22%, black 0%, transparent 76%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.website-page .websites-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.website-page .websites-hero h1 {
+  max-width: 10ch;
+  margin-top: 1.1rem;
+  font-size: 3.55rem;
+}
+
+.website-page .websites-hero-copy {
+  max-width: 43rem;
+  margin-top: 1.4rem;
+  font-size: 1.12rem;
+  line-height: 1.7;
+  color: rgba(232, 232, 236, 0.72);
+}
+
+.website-page .websites-trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.6rem;
+}
+
+.website-page .websites-trust-row span,
+.website-page .why-copy span {
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 999px;
+  padding: 0.55rem 0.72rem;
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 0.78rem;
+  color: rgba(232, 232, 236, 0.72);
+}
+
+.website-page .websites-hero-visual {
+  position: relative;
+  min-width: 0;
+}
+
+.website-page .floating-ui-card {
+  position: absolute;
+  z-index: 5;
+  display: none;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 0.95rem;
+  padding: 0.9rem;
+  background: rgba(9, 11, 16, 0.78);
+  box-shadow: none;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.website-page .floating-ui-card span {
+  display: block;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(232, 232, 236, 0.42);
+}
+
+.website-page .floating-ui-card strong {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.website-page .floating-ui-card-a {
+  left: -1rem;
+  top: 5.5rem;
+}
+
+.website-page .floating-ui-card-a strong {
+  font-size: 2rem;
+  color: var(--color-accent);
+}
+
+.website-page .floating-ui-card-b {
+  right: -0.8rem;
+  top: 2.2rem;
+}
+
+.website-page .floating-ui-card-c {
+  right: 2rem;
+  bottom: 1.6rem;
+}
+
+.website-page .websites-section {
+  padding-block: 4rem;
+}
+
+.website-page .section-split-heading {
+  display: grid;
+  gap: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.website-page .section-split-heading h2,
+.website-page .process-panel h2,
+.website-page .why-panel h2,
+.website-page .request-form-card h2,
+.website-page .websites-final-cta h2 {
+  margin-top: 0.9rem;
+  max-width: 13ch;
+  font-size: 2.55rem;
+}
+
+.website-page .section-split-heading > p,
+.website-page .why-copy > p,
+.website-page .request-form-card > div > p,
+.website-page .websites-final-cta p {
+  max-width: 37rem;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(232, 232, 236, 0.62);
+}
+
+.website-page .audience-grid,
+.website-page .feature-grid,
+.website-page .demo-grid,
+.website-page .pricing-grid,
+.website-page .process-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.website-page .audience-card,
+.website-page .feature-tile,
+.website-page .demo-card,
+.website-page .pricing-card,
+.website-page .process-panel,
+.website-page .process-step,
+.website-page .why-panel,
+.website-page .request-form-card,
+.website-page .websites-final-cta > div {
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.062),
+      rgba(255, 255, 255, 0.018)
+    ),
+    rgba(17, 19, 26, 0.64);
+  box-shadow: none;
+}
+
+.website-page .audience-card {
+  min-height: 13rem;
+  border-radius: 1rem;
+  padding: 1.15rem;
+}
+
+.website-page .audience-card h3,
+.website-page .demo-card h3,
+.website-page .pricing-card h3,
+.website-page .process-step h3 {
+  margin-top: 1.15rem;
+  font-size: 1.18rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #fff;
+}
+
+.website-page .audience-card p,
+.website-page .demo-card p,
+.website-page .pricing-card p,
+.website-page .process-step p {
+  margin-top: 0.72rem;
+  font-size: 0.94rem;
+  line-height: 1.65;
+  color: rgba(232, 232, 236, 0.62);
+}
+
+.website-page .feature-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.website-page .feature-tile {
+  display: flex;
+  min-height: 5rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 0.95rem;
+  padding: 0.95rem;
+  font-size: 0.94rem;
+  line-height: 1.35;
+  color: rgba(232, 232, 236, 0.84);
+}
+
+.website-page .demo-card {
+  overflow: hidden;
+  border-radius: 1.1rem;
+  padding: 0.8rem;
+}
+
+.website-page .demo-card .website-mockup {
+  box-shadow: none;
+}
+
+.website-page .demo-card-copy {
+  padding: 1rem 0.3rem 0.35rem;
+}
+
+.website-page .demo-card-copy span,
+.website-page .pricing-badge,
+.website-page .process-step span {
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(184, 205, 226, 0.68);
+}
+
+.website-page .demo-card-copy a {
+  display: inline-flex;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(184, 205, 226, 0.38);
+  padding-bottom: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(232, 232, 236, 0.9);
+}
+
+.website-page .pricing-card {
+  position: relative;
+  border-radius: 1.1rem;
+  padding: 1.25rem;
+}
+
+.website-page .pricing-card-featured {
+  border-color: rgba(184, 205, 226, 0.28);
+  background:
+    radial-gradient(
+      ellipse 70% 44% at 50% 0%,
+      rgba(184, 205, 226, 0.13),
+      transparent 72%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.075),
+      rgba(255, 255, 255, 0.02)
+    ),
+    rgba(17, 19, 26, 0.78);
+}
+
+.website-page .pricing-badge {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(184, 205, 226, 0.22);
+  border-radius: 999px;
+  padding: 0.45rem 0.62rem;
+  background: rgba(184, 205, 226, 0.075);
+}
+
+.website-page .pricing-card h3 {
+  margin-top: 0;
+}
+
+.website-page .pricing-card strong {
+  display: block;
+  margin-top: 0.9rem;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 500;
+  color: #fff;
+}
+
+.website-page .pricing-card ul {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1.2rem;
+  list-style: none;
+}
+
+.website-page .pricing-card li {
+  position: relative;
+  padding-left: 1.05rem;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: rgba(232, 232, 236, 0.7);
+}
+
+.website-page .pricing-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 999px;
+  background: rgba(184, 205, 226, 0.82);
+}
+
+.website-page .process-panel,
+.website-page .why-panel,
+.website-page .request-form-card,
+.website-page .websites-final-cta > div {
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+}
+
+.website-page .process-grid {
+  margin-top: 1.6rem;
+}
+
+.website-page .process-step {
+  border-radius: 0.95rem;
+  padding: 1rem;
+}
+
+.website-page .process-step h3 {
+  margin-top: 0.85rem;
+}
+
+.website-page .why-panel {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.website-page .why-copy div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.2rem;
+}
+
+.website-page .request-form-card {
+  display: grid;
+  gap: 1.5rem;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse 70% 54% at 88% 0%,
+      rgba(184, 205, 226, 0.12),
+      transparent 72%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.07),
+      rgba(255, 255, 255, 0.018)
+    ),
+    rgba(17, 19, 26, 0.76);
+}
+
+.website-page .request-form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.website-page .request-form label {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.75rem;
+  color: rgba(232, 232, 236, 0.58);
+}
+
+.website-page .request-form input,
+.website-page .request-form select,
+.website-page .request-form textarea {
+  width: 100%;
+  min-height: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 0.75rem;
+  padding: 0.85rem 0.9rem;
+  background: rgba(4, 6, 10, 0.5);
+  color: #fff;
+  font: inherit;
+}
+
+.website-page .request-form textarea {
+  resize: vertical;
+}
+
+.website-page .request-form option {
+  background: #11131a;
+  color: #fff;
+}
+
+.website-page .request-form-submit {
+  margin-top: 0.4rem;
+}
+
+.website-page .websites-final-cta {
+  padding-block-start: 2rem;
+}
+
+.website-page .websites-final-cta > div {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      ellipse 60% 58% at 80% 20%,
+      rgba(184, 205, 226, 0.15),
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 50% 44% at 16% 100%,
+      rgba(228, 184, 109, 0.1),
+      transparent 72%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.078),
+      rgba(255, 255, 255, 0.018)
+    ),
+    #0d0f17;
+}
+
+.website-page .websites-final-cta p {
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .website-page body::before {
+    background-size: 6px 6px;
+    opacity: 0.06;
+  }
+
+  .website-page .premium-button {
+    width: 100%;
+  }
+
+  .website-page .website-service-card,
+  .website-page .process-panel,
+  .website-page .why-panel,
+  .website-page .request-form-card,
+  .website-page .websites-final-cta > div {
+    border-radius: 1rem;
+  }
+
+  .website-page .website-mockup {
+    min-height: 17rem;
+  }
+
+  .website-page .website-mockup-compact {
+    min-height: 14rem;
+  }
+
+  .website-page .website-mockup-hero {
+    grid-template-columns: minmax(0, 1fr) 4.4rem;
+  }
+
+  .website-page .website-mockup-hero strong {
+    font-size: 1.7rem;
+  }
+
+  .website-page .website-mockup-phone {
+    width: 4.4rem;
+    height: 7.3rem;
+  }
+
+  .website-page .websites-hero h1 {
+    font-size: 3rem;
+  }
+
+  .website-page .section-split-heading h2,
+  .website-page .process-panel h2,
+  .website-page .why-panel h2,
+  .website-page .request-form-card h2,
+  .website-page .websites-final-cta h2,
+  .website-page .website-service-copy h2 {
+    font-size: 2.25rem;
+  }
+
+  .website-page .feature-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .website-page .page-shell,
+  .website-page .section-shell {
+    padding-inline: 2rem;
+  }
+
+  .website-page .website-service-card {
+    grid-template-columns: minmax(0, 0.95fr) minmax(20rem, 1fr);
+    padding: 1.7rem;
+  }
+
+  .website-page .website-service-copy {
+    grid-column: 1 / 2;
+  }
+
+  .website-page .website-service-benefits {
+    grid-column: 1 / 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-self: end;
+  }
+
+  .website-page .website-service-visual {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    align-self: center;
+  }
+
+  .website-page .before-after-card,
+  .website-page .floating-ui-card {
+    display: block;
+  }
+
+  .website-page .website-service-actions,
+  .website-page .websites-hero-actions {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .website-page .websites-hero {
+    padding-block: 7.5rem 5.5rem;
+  }
+
+  .website-page .websites-hero h1 {
+    font-size: 4.4rem;
+  }
+
+  .website-page .audience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .website-page .demo-grid,
+  .website-page .pricing-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .website-page .demo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .website-page .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .website-page .request-form-card {
+    grid-template-columns: 0.78fr 1fr;
+    padding: 1.7rem;
+  }
+
+  .website-page .request-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .website-page .request-form-wide,
+  .website-page .request-form-submit {
+    grid-column: 1 / -1;
+  }
+
+  .website-page .request-form-submit {
+    width: max-content;
+  }
+}
+
+@media (min-width: 1024px) {
+  .website-page .page-shell,
+  .website-page .section-shell {
+    padding-inline: 3rem;
+  }
+
+  .website-page .website-service-card {
+    padding: 2rem;
+  }
+
+  .website-page .website-service-copy h2 {
+    font-size: 4.35rem;
+  }
+
+  .website-page .websites-hero-grid {
+    grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.72fr);
+    gap: 3.5rem;
+  }
+
+  .website-page .websites-hero h1 {
+    font-size: 5.45rem;
+  }
+
+  .website-page .section-split-heading {
+    grid-template-columns: minmax(0, 0.9fr) minmax(20rem, 0.62fr);
+    align-items: end;
+    margin-bottom: 1.8rem;
+  }
+
+  .website-page .section-split-heading h2,
+  .website-page .process-panel h2,
+  .website-page .why-panel h2,
+  .website-page .request-form-card h2,
+  .website-page .websites-final-cta h2 {
+    font-size: 3.6rem;
+  }
+
+  .website-page .audience-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .website-page .feature-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .website-page .demo-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .website-page .process-panel,
+  .website-page .why-panel,
+  .website-page .websites-final-cta > div {
+    padding: 2rem;
+  }
+
+  .website-page .process-panel {
+    display: grid;
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .website-page .process-grid {
+    margin-top: 0;
+  }
+
+  .website-page .why-panel {
+    grid-template-columns: minmax(0, 0.78fr) minmax(0, 1fr);
+    align-items: center;
+    padding: 2.25rem;
+  }
+
+  .website-page .request-form-card {
+    padding: 2rem;
+  }
+}
+
+/* Shared identity applied to retained service layouts. */
+.website-page .websites-hero,
+.website-page .website-service-card,
+.website-page .audience-card,
+.website-page .feature-tile,
+.website-page .demo-card,
+.website-page .pricing-card,
+.website-page .process-panel,
+.website-page .process-step,
+.website-page .why-panel,
+.website-page .request-form-card,
+.website-page .websites-final-cta > div,
+.website-page .pricing-card-featured {
+  background: var(--color-surface);
+}
+.website-page .websites-hero::before,
+.website-page .website-service-card::before {
+  display: none;
+}
+
+/* Grid items may shrink below their intrinsic text width on compact screens. */
+.website-page .websites-hero-grid > * {
+  min-width: 0;
+}
+@media (max-width: 1023px) {
+  .website-page .websites-hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.website-page .websites-hero-actions .premium-button {
+  max-width: 100%;
+  white-space: normal;
+}
+.website-page h1,
+.website-page h2 {
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+.website-page .why-panel > *,
+.website-page .request-form-card > * {
+  min-width: 0;
+}

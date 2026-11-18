@@ -3,14 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "node scripts/start-portfolio.mjs --development",
+    "build": "node scripts/check-public-release.mjs && next build --webpack",
+    "start": "node scripts/start-portfolio.mjs",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "verify": "node scripts/verify-portfolio.mjs",
+    "verify:ui": "node scripts/verify-lux-noir.cjs",
+    "preview": "node scripts/start-portfolio.mjs --port 3037",
+    "test": "node --test tests/*.test.cjs tests/*.test.mjs",
+    "check:release": "node scripts/check-public-release.mjs",
+    "check:security": "node scripts/check-source-security.mjs",
+    "verify:release": "node scripts/verify-release.cjs"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",
-    "next": "16.2.3",
+    "next": "16.4.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
@@ -20,7 +28,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.3",
+    "eslint-config-next": "16.4.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

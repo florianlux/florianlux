@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { identity } from "@/app/site-data";
 
 type ContactSectionProps = {
   links: Array<{ label: string; href: string }>;
@@ -16,7 +17,7 @@ export default function ContactSection({ links }: ContactSectionProps) {
               Let&apos;s build something structured, useful and beautiful.
             </h2>
             <div className="mt-7 flex flex-col gap-2.5 sm:flex-row">
-              <a href="mailto:hello@florianlux.dev" className="premium-button premium-button-primary">
+              <a href={`mailto:${identity.email}`} className="premium-button premium-button-primary">
                 Email Florian
               </a>
               <Link href="/contact" className="premium-button premium-button-secondary">

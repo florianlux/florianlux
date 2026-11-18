@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { identity } from "@/app/site-data";
 
 const budgetOptions = ["300-600 €", "600-1000 €", "1000+ €"];
 
@@ -33,7 +34,7 @@ export default function WebsiteRequestForm() {
       ].join("\n"),
     );
 
-    return `mailto:hello@florianlux.dev?subject=${subject}&body=${body}`;
+    return `mailto:${identity.email}?subject=${subject}&body=${body}`;
   }, [budget, company, email, message, name, need]);
 
   return (
@@ -43,14 +44,37 @@ export default function WebsiteRequestForm() {
         <h2>Erzähl kurz, was du vorhast.</h2>
         <p>
           Das Formular öffnet einen vorbereiteten E-Mail-Entwurf. Es sendet
-          nichts automatisch und braucht deshalb kein Backend.
+          nichts automatisch. Prüfe deinen Entwurf vor dem Senden.
         </p>
       </div>
 
-      <form className="request-form" action={mailHref} method="post">
+      <noscript>
+        <p>
+          Schreib dein Vorhaben direkt per E-Mail:{" "}
+          <a href={`mailto:${identity.email}`}>{identity.email}</a>.
+        </p>
+        <style>
+          {".website-page .request-form { display: none !important; }"}
+        </style>
+      </noscript>
+      <form
+        className="request-form"
+        action={`mailto:${identity.email}`}
+        method="get"
+        onSubmit={(event) => {
+          event.preventDefault();
+          window.location.href = mailHref;
+        }}
+      >
         <label>
           Name
-          <input value={name} onChange={(event) => setName(event.target.value)} name="name" />
+          <input
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            name="name"
+            maxLength={100}
+            autoComplete="name"
+          />
         </label>
         <label>
           Unternehmen / Projekt
@@ -58,6 +82,8 @@ export default function WebsiteRequestForm() {
             value={company}
             onChange={(event) => setCompany(event.target.value)}
             name="company"
+            maxLength={160}
+            autoComplete="organization"
           />
         </label>
         <label>
@@ -66,16 +92,27 @@ export default function WebsiteRequestForm() {
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             name="email"
+            maxLength={254}
+            autoComplete="email"
             type="email"
           />
         </label>
         <label>
           Was brauchst du?
-          <input value={need} onChange={(event) => setNeed(event.target.value)} name="need" />
+          <input
+            value={need}
+            onChange={(event) => setNeed(event.target.value)}
+            name="need"
+            maxLength={240}
+          />
         </label>
         <label>
           Budget grob
-          <select value={budget} onChange={(event) => setBudget(event.target.value)} name="budget">
+          <select
+            value={budget}
+            onChange={(event) => setBudget(event.target.value)}
+            name="budget"
+          >
             {budgetOptions.map((option) => (
               <option key={option}>{option}</option>
             ))}
@@ -87,12 +124,16 @@ export default function WebsiteRequestForm() {
             value={message}
             onChange={(event) => setMessage(event.target.value)}
             name="message"
+            maxLength={4000}
             rows={5}
           />
         </label>
-        <a className="premium-button premium-button-primary request-form-submit" href={mailHref}>
+        <button
+          type="submit"
+          className="premium-button premium-button-primary request-form-submit"
+        >
           E-Mail mit Anfrage öffnen
-        </a>
+        </button>
       </form>
     </div>
   );

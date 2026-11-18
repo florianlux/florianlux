@@ -1,0 +1,55 @@
+MOTIONSWITCH / LOCAL ACCEPTANCE / 11 OCTOBER 2026
+
+PASSED
+- TypeScript typecheck, ESLint and Next.js production build (webpack).
+- Existing verify-portfolio.mjs: twelve routes, zero failures. Includes canonical
+  and social metadata, parseable entity schema, security headers, sitemap,
+  robots, social image and expected not-found behavior.
+- Chrome: fifteen grouped browser checks, zero failures. Five modes, keyboard
+  selection/focus, six viewport widths from 320 to 1440px, mobile menu/Escape,
+  timeline, opt-in sound, local destinations, consent gating, no third-party
+  browser requests/cookies/local storage, reduced motion, JavaScript disabled,
+  missing-image fallback, slow network and social-kit export/playback.
+- Firefox 153: nine grouped checks, zero errors. Five modes, keyboard, five
+  device widths, mobile menu, timeline, runtime/hydration, reduced motion,
+  JavaScript-disabled operation and portrait failure.
+- Playwright WebKit 26.5: the same nine checks passed with zero errors.
+- Native Safari: final desktop smoke check passed. Five modes expose one hero
+  and matching selected work; right-arrow selection and timeline disclosure
+  work. The corrected hero styling was inspected visually.
+
+MEASURED / LOCAL LAB
+One Chrome production navigation, fresh isolated browser context and a warm
+Next.js image optimizer: LCP 188ms, CLS 0.000871, resource transfers 292,611 bytes.
+These are one local lab observation, not field Core Web Vitals. All thirty-two emitted
+JavaScript chunks across the whole app total 917,265 bytes / 286,180 gzip bytes;
+this total is not the initial homepage bundle. Real-user INP and 60 FPS across
+all physical devices remain unverified. No public analytics vendor is installed.
+
+NATIVE SAFARI BOUNDARY
+An early native Safari smoke check exposed overlapping panels while the preview
+was being rebuilt. Inactive panels now use display:none. The final isolated
+WebKit suite passed. A final native Safari desktop smoke check was completed
+in a separate test tab: all five modes, arrow-key selection and timeline
+disclosure passed. The test tab was closed afterward. Safari mobile/tablet,
+reduced-motion and fallback coverage is through the isolated WebKit suite;
+the native Safari smoke check does not claim that complete suite.
+
+SCOPE AND ASSETS
+The supplied portrait artwork is used directly. No facial geometry, hidden hair,
+body proportions, documentary footage or partner identity is synthesized.
+All mode-specific scenes currently reuse that asset with different framing or
+selective grayscale. A completed multi-scene social video is not claimed.
+The social kit is an editable timing/template tool with SVG still export.
+NOW is a dated editorial note. There is no simulated API, live activity feed,
+newsletter submission, payment state, audience count or achievement metric.
+
+PRODUCTION BOUNDARY
+No commit, push, deploy, DNS change, production database mutation or account
+configuration change is performed. Canonical domain/hosting were retained from
+the existing source and are not independently established. Validation ran on
+an isolated copy of the current working files using the existing dependencies.
+Sixteen implementation/document files were transferred to the original
+repository after matching baseline hashes. All 83 other captured source files
+are unchanged. transfer-receipt.json records the destination hashes. Only
+our reviewed increment was applied; existing uncommitted work was preserved.

@@ -1,64 +1,51 @@
 "use client";
-
-import { useEffect, useRef, type ReactNode } from "react";
-import { motion, useInView, useAnimation } from "framer-motion";
-
-interface FadeInProps {
+import { useEffect, useRef, type CSSProperties, type ReactNode } from "react";
+export default function FadeIn({
+  children,
+  delay = 0,
+  duration = 0.6,
+  className = "",
+}: {
   children: ReactNode;
   delay?: number;
   direction?: "up" | "down" | "left" | "right" | "none";
   duration?: number;
   className?: string;
-}
-
-export default function FadeIn({
-  children,
-  delay = 0,
-  direction = "up",
-  duration = 0.5,
-  className = "",
-}: FadeInProps) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-60px" });
-  const controls = useAnimation();
-
-  const directionOffset = {
-    up: { y: 24 },
-    down: { y: -24 },
-    left: { x: 24 },
-    right: { x: -24 },
-    none: {},
-  };
-
+}) {
+  const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    if (isInView) {
-      controls.start("visible");
-    }
-  }, [isInView, controls]);
-
+    const el = ref.current;
+    if (
+      !el ||
+      !("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    )
+      return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add("reveal-enter");
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.08 },
+    );
+    if (el.getBoundingClientRect().top > window.innerHeight)
+      observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
   return (
-    <motion.div
+    <div
       ref={ref}
-      initial={{
-        opacity: 0,
-        ...directionOffset[direction],
-      }}
-      animate={controls}
-      variants={{
-        visible: {
-          opacity: 1,
-          y: 0,
-          x: 0,
-          transition: {
-            duration,
-            delay,
-            ease: [0.25, 0.4, 0.25, 1],
-          },
-        },
-      }}
       className={className}
+      style={
+        {
+          "--reveal-duration": `${duration}s`,
+          "--reveal-delay": `${delay}s`,
+        } as CSSProperties
+      }
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

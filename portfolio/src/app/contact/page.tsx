@@ -1,160 +1,80 @@
+import { pageMetadata } from "@/app/page-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
-import FadeIn from "@/components/FadeIn";
+import ContactForm from "@/components/ContactForm";
+import { contactConfiguration } from "@/lib/contact-service";
+import evidence from "../release-evidence.json";
 import { BreadcrumbSchema } from "@/components/StructuredData";
-import { socialLinks } from "@/app/site-data";
-
-export const metadata: Metadata = {
-  title: "Contact — Florian Lux",
-  description:
-    "Get in touch with Florian Lux about knowledge systems, intelligence platforms and structured information products.",
-  alternates: {
-    canonical: "/contact",
-  },
-};
-
+import { identity, socialLinks } from "@/app/site-data";
+export const dynamic = "force-dynamic";
+export const metadata: Metadata = pageMetadata(
+  "Connect",
+  "Connect with Florian Lux about thoughtful digital products, knowledge systems or a website for your business.",
+  "/contact",
+);
 export default function ContactPage() {
-  const externalLinks = socialLinks.filter((l) => !l.href.startsWith("mailto:"));
-
+  const reviewed = evidence.checks.privacyReviewed && evidence.checks.managementMailboxVerified && evidence.checks.dataFlowsReviewed;
+  const enabled = !!contactConfiguration(process.env, reviewed);
   return (
     <>
       <BreadcrumbSchema
         items={[
           { name: "Home", href: "/" },
-          { name: "Contact", href: "/contact" },
+          { name: "Connect", href: "/contact" },
         ]}
       />
-
-      {/* Page hero */}
-      <section
-        className="section-shell pt-0"
-        style={{
-          paddingBlockStart: "clamp(6.5rem, 10vw, 9rem)",
-          paddingBlockEnd: "clamp(3.5rem, 5vw, 5rem)",
-        }}
-      >
-        <FadeIn direction="none" duration={0.7}>
-          <Link
-            href="/"
-            className="font-mono text-[10px] uppercase tracking-[0.28em] text-white/28 transition-colors duration-200 hover:text-white/55"
-          >
-            ← Home
-          </Link>
-          <p
-            className="mt-10 font-mono text-[10px] uppercase text-white/36"
-            style={{ letterSpacing: "0.34em" }}
-          >
-            Contact
-          </p>
-          <h1
-            className="mt-4 font-medium text-white"
-            style={{
-              fontSize: "clamp(3rem, 7vw, 6rem)",
-              lineHeight: "0.97",
-              letterSpacing: "-0.065em",
-            }}
-          >
-            Build a knowledge system.
-          </h1>
-          <p
-            className="mt-5 leading-[1.8] text-white/46"
-            style={{
-              fontSize: "clamp(0.93rem, 1.2vw, 1.05rem)",
-              maxWidth: "46ch",
-            }}
-          >
-            For knowledge platforms, intelligence products, structured
-            information systems or a modern website for a local business, send
-            a short direct message with the outcome you need.
-          </p>
-          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <Link href="/websites#anfrage" className="premium-button premium-button-primary sm:w-auto">
-              Website anfragen
-            </Link>
-            <a href="mailto:hello@florianlux.dev" className="premium-button premium-button-secondary sm:w-auto">
-              Direkt mailen
-            </a>
-          </div>
-        </FadeIn>
+      <section className="section-shell page-hero">
+        <Link href="/" className="text-link">
+          ← Home
+        </Link>
+        <p className="eyebrow">A conversation is a good beginning.</p>
+        <h1>What’s on your mind?</h1>
+        <p className="page-intro">
+          Have a thoughtful project, an interesting problem, or a different
+          perspective? I’d like to hear it.
+        </p>
+        <a className="contact-email" href={`mailto:${identity.email}`}>
+          {identity.email} <span aria-hidden="true">↗</span>
+        </a>
+        <p className="body-copy">
+          Opens your email app. Tell me what you’re building and the outcome you
+          have in mind.
+        </p>
       </section>
-
-      {/* Hairline */}
-      <div className="section-shell py-0">
-        <div
-          className="h-px"
-          style={{
-            background:
-              "linear-gradient(90deg, rgba(255,255,255,0.08) 0%, transparent 70%)",
-          }}
-        />
-      </div>
-
-      {/* Contact content */}
-      <section
-        className="section-shell"
-        style={{
-          paddingBlockStart: "clamp(3.5rem, 6vw, 5.5rem)",
-          paddingBlockEnd: "clamp(5rem, 9vw, 8rem)",
-        }}
-      >
-        <FadeIn direction="none" duration={0.65}>
-          {/* Primary email CTA */}
+      <section className="section-shell"><ContactForm enabled={enabled} email={identity.email} /></section>
+      <section className="section-shell page-content">
+        <div className="editorial-grid">
           <div>
-            <p
-              className="font-mono text-[9.5px] uppercase text-white/28"
-              style={{ letterSpacing: "0.3em" }}
-            >
-              Email
+            <p className="eyebrow">Find me elsewhere</p>
+            <div className="connect-links">
+              {socialLinks
+                .filter((link) => link.label !== "Email")
+                .map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.label}
+                    <span aria-hidden="true">↗</span>
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                ))}
+            </div>
+          </div>
+          <div>
+            <p className="eyebrow">For your business</p>
+            <h2 className="display-heading">A website with intention.</h2>
+            <p className="section-description">
+              Persönlich entwickelte Websites für lokale Unternehmen,
+              Selbstständige und kleine Marken.
             </p>
-            <a
-              href="mailto:hello@florianlux.dev"
-              className="group mt-4 flex items-baseline gap-3 transition-opacity duration-200 hover:opacity-75"
-            >
-              <span
-                className="font-medium text-white"
-                style={{
-                  fontSize: "clamp(1.4rem, 3vw, 2.5rem)",
-                  letterSpacing: "-0.04em",
-                  lineHeight: 1.1,
-                }}
-              >
-                hello@florianlux.dev
-              </span>
-              <span
-                aria-hidden="true"
-                className="text-white/36 transition-transform duration-200 group-hover:translate-x-0.5"
-              >
-                →
-              </span>
-            </a>
+            <Link className="text-link" href="/websites">
+              Website-Service ansehen ↗
+            </Link>
           </div>
-
-          {/* Social links */}
-          <div className="mt-14 border-t border-white/[0.06]">
-            {externalLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noreferrer"
-                className="group flex items-center justify-between border-b border-white/[0.06] py-5 transition-colors hover:border-white/[0.1]"
-              >
-                <p
-                  className="font-mono text-[9.5px] uppercase text-white/40"
-                  style={{ letterSpacing: "0.28em" }}
-                >
-                  {link.label}
-                </p>
-                <span
-                  aria-hidden="true"
-                  className="text-sm text-white/24 transition-[transform,color] duration-200 group-hover:translate-x-0.5 group-hover:text-white/55"
-                >
-                  ↗
-                </span>
-              </a>
-            ))}
-          </div>
-        </FadeIn>
+        </div>
       </section>
     </>
   );

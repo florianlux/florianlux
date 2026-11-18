@@ -1,9 +1,14 @@
+import "@/app/website-service.css";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { identity } from "@/app/site-data";
 import FadeIn from "@/components/FadeIn";
 import WebsiteMockup from "@/components/WebsiteMockup";
 import WebsiteRequestForm from "@/components/WebsiteRequestForm";
-import { BreadcrumbSchema, ProfessionalServiceSchema } from "@/components/StructuredData";
+import {
+  BreadcrumbSchema,
+  ProfessionalServiceSchema,
+} from "@/components/StructuredData";
 
 export const metadata: Metadata = {
   title: {
@@ -19,6 +24,15 @@ export const metadata: Metadata = {
     description:
       "Moderne Websites für lokale Unternehmen, Selbstständige und kleine Marken - persönlich umgesetzt, mobil optimiert und klar strukturiert.",
     url: "/websites",
+    locale: "de_DE",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Florian Lux — Websites für lokale Unternehmen",
+      },
+    ],
     type: "website",
   },
 };
@@ -132,15 +146,27 @@ const packages = [
 ];
 
 const process = [
-  ["Kurzes Gespräch", "Wir klären Ziel, Umfang und ob eine kleine oder größere Lösung sinnvoll ist."],
-  ["Inhalte & Ziel klären", "Du lieferst, was vorhanden ist. Ich helfe bei Struktur, Texten und fehlenden Stellen."],
-  ["Design und Umsetzung", "Ich baue die Website modern, schnell und passend zu deinem Angebot."],
-  ["Veröffentlichung und Feinschliff", "Zum Schluss gehen wir mobil, Kontaktwege und Details gemeinsam sauber durch."],
+  [
+    "Kurzes Gespräch",
+    "Wir klären Ziel, Umfang und ob eine kleine oder größere Lösung sinnvoll ist.",
+  ],
+  [
+    "Inhalte & Ziel klären",
+    "Du lieferst, was vorhanden ist. Ich helfe bei Struktur, Texten und fehlenden Stellen.",
+  ],
+  [
+    "Design und Umsetzung",
+    "Ich baue die Website modern, schnell und passend zu deinem Angebot.",
+  ],
+  [
+    "Veröffentlichung und Feinschliff",
+    "Zum Schluss gehen wir mobil, Kontaktwege und Details gemeinsam sauber durch.",
+  ],
 ];
 
 export default function WebsitesPage() {
   return (
-    <>
+    <div lang="de" className="website-page">
       <BreadcrumbSchema
         items={[
           { name: "Home", href: "/" },
@@ -161,19 +187,32 @@ export default function WebsitesPage() {
                 was du brauchst, um online professionell aufzutreten.
               </p>
               <div className="websites-hero-actions">
-                <Link href="#anfrage" className="premium-button premium-button-primary">
+                <Link
+                  href="#anfrage"
+                  className="premium-button premium-button-primary"
+                >
                   Kostenlose Ersteinschätzung anfragen
                 </Link>
-                <Link href="#beispiele" className="premium-button premium-button-secondary">
+                <Link
+                  href="#beispiele"
+                  className="premium-button premium-button-secondary"
+                >
                   Website-Beispiele ansehen
                 </Link>
               </div>
-              <div className="websites-trust-row" aria-label="Trust Hinweise">
-                {["Persönliche Umsetzung", "Schnelle Lieferung", "Mobile optimiert", "Faire Einstiegspakete"].map(
-                  (item) => (
-                    <span key={item}>{item}</span>
-                  ),
-                )}
+              <div
+                className="websites-trust-row"
+                role="group"
+                aria-label="Hinweise zur Zusammenarbeit"
+              >
+                {[
+                  "Persönliche Umsetzung",
+                  "Schnelle Lieferung",
+                  "Mobile optimiert",
+                  "Faire Einstiegspakete",
+                ].map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
               </div>
             </div>
           </FadeIn>
@@ -182,8 +221,8 @@ export default function WebsitesPage() {
             <div className="websites-hero-visual" aria-hidden="true">
               <WebsiteMockup variant="streetfood" />
               <div className="floating-ui-card floating-ui-card-a">
-                <span>Mobile Score</span>
-                <strong>98</strong>
+                <span>Mobile Design</span>
+                <strong>Responsive</strong>
               </div>
               <div className="floating-ui-card floating-ui-card-b">
                 <span>Anfragen</span>
@@ -286,7 +325,9 @@ export default function WebsitesPage() {
               key={pack.name}
               className={`pricing-card ${pack.featured ? "pricing-card-featured" : ""}`}
             >
-              {pack.featured ? <span className="pricing-badge">Empfohlen</span> : null}
+              {pack.featured ? (
+                <span className="pricing-badge">Empfohlen</span>
+              ) : null}
               <h3>{pack.name}</h3>
               <strong>{pack.price}</strong>
               <p>{pack.intro}</p>
@@ -353,21 +394,29 @@ export default function WebsitesPage() {
       <section className="section-shell websites-final-cta">
         <div>
           <p className="section-kicker">Nächster Schritt</p>
-          <h2>Deine Website soll nicht nur existieren. Sie soll Eindruck machen.</h2>
+          <h2>
+            Deine Website soll nicht nur existieren. Sie soll Eindruck machen.
+          </h2>
           <p>
             Schick mir kurz, was du vorhast - ich sage dir ehrlich, welche
             Lösung sinnvoll ist.
           </p>
           <div className="websites-hero-actions">
-            <Link href="#anfrage" className="premium-button premium-button-primary">
+            <Link
+              href="#anfrage"
+              className="premium-button premium-button-primary"
+            >
               Projekt anfragen
             </Link>
-            <a href="mailto:hello@florianlux.dev" className="premium-button premium-button-secondary">
+            <a
+              href={`mailto:${identity.email}`}
+              className="premium-button premium-button-secondary"
+            >
               Direkt per E-Mail
             </a>
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

@@ -1,50 +1,23 @@
 import type { MetadataRoute } from "next";
-
+import { isPublicRelease } from "./publication";
+import { identity, projects, journal, editorialDate } from "./site-data";
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://florianlux.dev";
-
+  if (!isPublicRelease) return [];
   return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/projects`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/projects/synapedia`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/projects/neurocodex`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/websites`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-  ];
+    "",
+    "/about",
+    "/projects",
+    ...projects.map((project) => project.href),
+    "/journal",
+    ...journal.map((entry) => `/journal/${entry.slug}`),
+    "/websites",
+    "/contact",
+    "/impressum",
+    "/datenschutz",
+  ].map((path) => ({
+    url: `${identity.origin}${path}`,
+    lastModified: editorialDate,
+    changeFrequency: "monthly",
+    priority: path === "" ? 1 : path.startsWith("/projects/") ? 0.8 : 0.6,
+  }));
 }
