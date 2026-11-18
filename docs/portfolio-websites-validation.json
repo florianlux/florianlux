@@ -1,0 +1,478 @@
+{
+  "date": "2026-11-18",
+  "applicationCommit": "4d31def7f48515be4dea29bff65cb6f422905a47",
+  "node": "22.22.3",
+  "next": "16.4.6",
+  "lint": "PASS",
+  "typescript": "PASS",
+  "build": "PASS",
+  "unitTests": {
+    "passed": 21,
+    "failed": 0
+  },
+  "routeVerifier": {
+    "routes": 15,
+    "failures": 0
+  },
+  "browser": {
+    "engines": {
+      "chromium": {
+        "version": "145.0.7632.6",
+        "checks": [
+          "five semantic mode buttons / copy / one panel / metadata",
+          "arrow / Home / End keyboard selection and focus",
+          "eight widths / no overflow / comfortable targets",
+          "mobile menu / scroll lock / inert background / Tab cycle / Escape",
+          "timeline disclosure / evidence",
+          "privacy and sound defaults / runtime errors",
+          "WCAG axe checks / all fifteen routes and five modes",
+          "local navigation destinations and fragments",
+          "email draft / fields / no submission",
+          "analytics adapter only reports with explicit consent",
+          "reduced motion / all content / no pointer movement",
+          "JS-disabled native switch and navigation",
+          "missing portrait / reserved fallback frame",
+          "slow network / throttled interactions / lab Event Timing",
+          "no runtime errors across the full route sequence"
+        ]
+      },
+      "webkit": {
+        "version": "26.0",
+        "checks": [
+          "five semantic mode buttons / copy / one panel / metadata",
+          "arrow / Home / End keyboard selection and focus",
+          "eight widths / no overflow / comfortable targets",
+          "mobile menu / scroll lock / inert background / Tab cycle / Escape",
+          "timeline disclosure / evidence",
+          "privacy and sound defaults / runtime errors",
+          "reduced motion / all content / no pointer movement",
+          "JS-disabled native switch and navigation",
+          "missing portrait / reserved fallback frame",
+          "no runtime errors across the full route sequence"
+        ]
+      }
+    },
+    "failures": [],
+    "accessibilityScenarios": 21,
+    "axeViolationCount": 0,
+    "incomplete": [
+      {
+        "name": "/",
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "name": "/about",
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "name": "/websites",
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "name": "mode BUILD",
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "name": "mode THINK",
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "name": "mode CREATE",
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "name": "mode FIELD",
+        "incomplete": [
+          "color-contrast"
+        ]
+      },
+      {
+        "name": "mode ARCHIVE",
+        "incomplete": [
+          "color-contrast"
+        ]
+      }
+    ]
+  },
+  "serviceQA": {
+    "layouts": 30,
+    "forms": [
+      {
+        "engine": "chromium",
+        "validation": "PASS",
+        "keyboard": "PASS",
+        "validMailtoHandoff": "NOT_RUN: avoids invoking a real mail client; URL builder unit-tested"
+      },
+      {
+        "engine": "webkit",
+        "validation": "PASS",
+        "keyboard": "PASS",
+        "validMailtoHandoff": "NOT_RUN: avoids invoking a real mail client; URL builder unit-tested"
+      }
+    ],
+    "failures": []
+  },
+  "releaseQA": {
+    "checks": [
+      "contact disabled / mail draft recipient / encoded content / no server requests",
+      "all fifteen routes at eight widths, including 320px reflow",
+      "200 percent text enlargement / contact focus remains visible below sticky navigation",
+      "legal drafts / noindex / correct language / permanent footer access",
+      "no-JavaScript contact avoids query-string submission and exposes direct email"
+    ],
+    "layouts": 120,
+    "failures": [],
+    "mockUISkipped": "Set PORTFOLIO_FORM_QA_URL to a local isolated fixture; never enable production delivery to test UI."
+  },
+  "performance": {
+    "conditions": "Local production preview; headless; cold page contexts; no CPU/network throttling. LCP/CLS are lab observations, not field CWV.",
+    "observations": [
+      {
+        "route": "/",
+        "width": 390,
+        "lcpMs": 56,
+        "cls": 0,
+        "javascriptEncodedBytes": 148937,
+        "imageEncodedBytes": 5574
+      },
+      {
+        "route": "/",
+        "width": 1440,
+        "lcpMs": 876,
+        "cls": 0,
+        "javascriptEncodedBytes": 154064,
+        "imageEncodedBytes": 17526
+      },
+      {
+        "route": "/websites",
+        "width": 390,
+        "lcpMs": 36,
+        "cls": 0.0001474692841880342,
+        "javascriptEncodedBytes": 154064,
+        "imageEncodedBytes": 0
+      },
+      {
+        "route": "/websites",
+        "width": 1440,
+        "lcpMs": 44,
+        "cls": 0.000024962248625578705,
+        "javascriptEncodedBytes": 154064,
+        "imageEncodedBytes": 0
+      },
+      {
+        "route": "/contact",
+        "width": 390,
+        "lcpMs": 40,
+        "cls": 0,
+        "javascriptEncodedBytes": 151751,
+        "imageEncodedBytes": 0
+      },
+      {
+        "route": "/contact",
+        "width": 1440,
+        "lcpMs": 40,
+        "cls": 0,
+        "javascriptEncodedBytes": 156878,
+        "imageEncodedBytes": 0
+      }
+    ],
+    "interaction": {
+      "samples": 7,
+      "maxDurationMs": 40,
+      "p98CandidateMs": 40,
+      "supported": true,
+      "conditions": "390px viewport, 150ms latency, 60KB/s, 4x CPU; a short scripted interaction sequence, not field INP"
+    },
+    "fieldINP": "NOT_RUN",
+    "lighthouse": "NOT_RUN"
+  },
+  "security": {
+    "runtimeAudit": "PASS: 0 vulnerabilities",
+    "fullAudit": {
+      "high": 9,
+      "moderate": 6,
+      "critical": 0,
+      "status": "FAIL: development tooling chain remains"
+    },
+    "sourceScan": "PASS: 0 credential or server-boundary findings; heuristic only",
+    "publicMode": "BLOCKED: expected, existing release evidence incomplete"
+  },
+  "screenshots": {
+    "directory": "portfolio/output/playwright/consolidation",
+    "review": "Inspected both browser overview sheets, desktop/mobile full pages and focused viewport captures.",
+    "files": [
+      {
+        "file": "chromium-contact-1440-full.png",
+        "sha256": "ddc22a0403d11daf6b4a8690681f64e0b6645ac91a5a831481f1dc1f92916638"
+      },
+      {
+        "file": "chromium-contact-1440.png",
+        "sha256": "da2015f530d1befde4b74f2d5f44808317fec98c4c544ed57c5c28039700252f"
+      },
+      {
+        "file": "chromium-contact-360.png",
+        "sha256": "5e9fa36d0f20622080d4f71016889d495914505c6e3fd8ed37c46a6a11e54166"
+      },
+      {
+        "file": "chromium-contact-390-full.png",
+        "sha256": "a95f02200c938650ea407bac93806540fe125a1bb2f3004e6dcabffcbe63a91c"
+      },
+      {
+        "file": "chromium-contact-390.png",
+        "sha256": "ebe002e0c39caa72ea1cf573f0bf79cf29a42b5c6354f50eb58bcb46abc90e61"
+      },
+      {
+        "file": "chromium-contact-430.png",
+        "sha256": "b702d2b86374f23baa4123b881ef19962efb2b020c28fdee0d6e75f245dc7f77"
+      },
+      {
+        "file": "chromium-contact-768.png",
+        "sha256": "bc52162596f1f8f1c08c690856094f4e067a0741268f7eff72f87c42f71b4e9f"
+      },
+      {
+        "file": "chromium-form-errors.png",
+        "sha256": "425d867e5a14d780284f819bd2db5de0d6a667e78bd117dc995b2aee2658dd74"
+      },
+      {
+        "file": "chromium-home-1440-full.png",
+        "sha256": "492cf4de81cd2ce50a4be97cb839a6898ed773aa8924186de3f55473aa1d618c"
+      },
+      {
+        "file": "chromium-home-1440.png",
+        "sha256": "e81ee884ccced5c578733546cb93203899326ec6489bdbc38b646d8862aba80c"
+      },
+      {
+        "file": "chromium-home-360.png",
+        "sha256": "b8a1aa8fa534135950bb994c5aed636dee56aeaa2583418f0804c6772cfcc321"
+      },
+      {
+        "file": "chromium-home-390-full.png",
+        "sha256": "d18af8242b562b47d6f28f1db346026b8bf0e2486eedeadbd459445dad6ae995"
+      },
+      {
+        "file": "chromium-home-390.png",
+        "sha256": "1f1e748ede04d8b5bd39f5cb107174bfcf1b232a5e85926e4f15df0dd9961ac6"
+      },
+      {
+        "file": "chromium-home-430.png",
+        "sha256": "259f0c907c9728fea7a8932223683d916a34901972c0fde39bdbdcccc4c16b79"
+      },
+      {
+        "file": "chromium-home-768.png",
+        "sha256": "961e125df756bc091192fa1f12f23c9d80c779f5779d829436b8e1e701972540"
+      },
+      {
+        "file": "chromium-overview.png",
+        "sha256": "7a160256b0cb1a1e81d36c7c3e4ba05ce168ed3b165a3afaf76e6e9b7000c980"
+      },
+      {
+        "file": "chromium-websites-1440-full.png",
+        "sha256": "4dc1d89b3346f36f50ff77fe00a394a459d8843eefd9c441460fdd6242204c0e"
+      },
+      {
+        "file": "chromium-websites-1440.png",
+        "sha256": "1b693f288f6a02a2ce1c7e40a352c36b5ab4c43474a2db7266fbe74e1837c5c8"
+      },
+      {
+        "file": "chromium-websites-360.png",
+        "sha256": "1183d344b607f1b3a83b7d81f749e83a846bf167cfdff115f83c73e309435f7f"
+      },
+      {
+        "file": "chromium-websites-390-full.png",
+        "sha256": "21201725cdffb07eee4d9abf54d74b3fdeda20c3aeca4027a698a5c017ffcc68"
+      },
+      {
+        "file": "chromium-websites-390.png",
+        "sha256": "d27fbb88c28b44cfdee5aea4967b821e6d415d8fdd822abfffa9e789384ab562"
+      },
+      {
+        "file": "chromium-websites-430.png",
+        "sha256": "9f69a529ffc643fad3912f9c602e569dfd3386f1e1deea4ef1b1097475479b94"
+      },
+      {
+        "file": "chromium-websites-768.png",
+        "sha256": "6c84ade6d41135f264d9d0d7e743aaee07bbf81e6ce4254fdcd01bb3dcd2f395"
+      },
+      {
+        "file": "contact-desktop.png",
+        "sha256": "27b0a112fca97e15a37922dd83341ba7831629dc5c870814b4f8e92da15300ac"
+      },
+      {
+        "file": "contact-mobile.png",
+        "sha256": "a95f02200c938650ea407bac93806540fe125a1bb2f3004e6dcabffcbe63a91c"
+      },
+      {
+        "file": "missing-image.png",
+        "sha256": "285e6a8a4158980ba8dbd5790706a5fb29a0a9fb59b1bba433f5fddb53ca979e"
+      },
+      {
+        "file": "privacy-mobile.png",
+        "sha256": "adaa8c737f45262455dc2fe894993a0c96e1ff022a0f1804be374d8abc7d807d"
+      },
+      {
+        "file": "reduced-motion.png",
+        "sha256": "b1ff5273b7832dc78cb917eff7e0abd10e52a26987f906395fc10c99b47ab7b4"
+      },
+      {
+        "file": "webkit-contact-1440-full.png",
+        "sha256": "21ef3e0e4ccc2950ddc81138958bb38760e0db04b067173cdb2de06ae8bf966d"
+      },
+      {
+        "file": "webkit-contact-1440.png",
+        "sha256": "363dddf1999d334510e86b25b172d0279b0f16cd835470b8c14b2daf19624d54"
+      },
+      {
+        "file": "webkit-contact-360.png",
+        "sha256": "61f721320be78b5fae8ab75d50662969c3718fcc40fbb8fa113f1ca2fae0d1ad"
+      },
+      {
+        "file": "webkit-contact-390-full.png",
+        "sha256": "919ea6d4adfbe4d5a31a3d0291cee8c017e8530b066cd146db1fd84d51cc9e27"
+      },
+      {
+        "file": "webkit-contact-390.png",
+        "sha256": "10686799a003f1cfc8c2b49acd1dd973e818de0d28139c6c2352ae59539567f0"
+      },
+      {
+        "file": "webkit-contact-430.png",
+        "sha256": "ea6109de09313e111d18090edea9659e9b5d87c3fd8460b7557aba0ae70a650d"
+      },
+      {
+        "file": "webkit-contact-768.png",
+        "sha256": "806c41cf847e6ac9be7835879e357d1a1cf4effc5b8a50051f5c31d5e4765a98"
+      },
+      {
+        "file": "webkit-form-errors.png",
+        "sha256": "02912a4d17100719edea977ef2f75d981a8f967b83fb8c17ac62c72f0fa223f5"
+      },
+      {
+        "file": "webkit-home-1440-full.png",
+        "sha256": "d2ab51945bc6fa87007007698826324ff158110a776b02c62e57af9b36b78890"
+      },
+      {
+        "file": "webkit-home-1440.png",
+        "sha256": "d255fe7f400292f260d30d5e565115afdb0b999ce7621d124705c825003cd818"
+      },
+      {
+        "file": "webkit-home-360.png",
+        "sha256": "b22c2f8c200f4376f314f78289e1e787769a0a3038911d5a716757d22d94f96a"
+      },
+      {
+        "file": "webkit-home-390-full.png",
+        "sha256": "a202ae147775f4ba09fbb54d51572aacbdec7250008dd3055fefbe855ee00197"
+      },
+      {
+        "file": "webkit-home-390.png",
+        "sha256": "137e3a935c4bc888247a9f679afd89bec7f559a3b8e7911583999548e999b392"
+      },
+      {
+        "file": "webkit-home-430.png",
+        "sha256": "6ac64df60d2ab4a2453d53834a4495314b164a2004b6736f0b40b8052b80c3a3"
+      },
+      {
+        "file": "webkit-home-768.png",
+        "sha256": "0cc539be0e4eabf49e208e64b57f5ab5057e56158346837055481b71806eb908"
+      },
+      {
+        "file": "webkit-overview.png",
+        "sha256": "cc27b85702c8c8064b764a741759dfa67067afe46654457e1baf1eaad172da55"
+      },
+      {
+        "file": "webkit-websites-1440-full.png",
+        "sha256": "d1c87c3f1c70a06b4de7a7222c41a4c5a3727dacd621c26ae5adc724bc7e1601"
+      },
+      {
+        "file": "webkit-websites-1440.png",
+        "sha256": "77663ee05741293c90591b2bba79434ec9cfff6a647bdebbc69adcc7d370e3e1"
+      },
+      {
+        "file": "webkit-websites-360.png",
+        "sha256": "9bff2e6fb97a6808a1da6d9fdc959af8a20fedb5b9eb54831275a96d3b9593bd"
+      },
+      {
+        "file": "webkit-websites-390-full.png",
+        "sha256": "6dbd91b2b32ea331ddfbffc3cc1f9dd55a318c805c09bb32f3519bb4615f236d"
+      },
+      {
+        "file": "webkit-websites-390.png",
+        "sha256": "cce8da8a095300d9b8378fa1771b07fa2437ad06b66e619d1fb8994ebbb0a1f0"
+      },
+      {
+        "file": "webkit-websites-430.png",
+        "sha256": "98ae351fc20c1d97bcd24094e105b71be22a7c34b609f14f044f8a758ef6e2ae"
+      },
+      {
+        "file": "webkit-websites-768.png",
+        "sha256": "b59b68fa086ea37b379390aa46d0f2c1c17adb72c8955a6d72e382089b1dfd86"
+      },
+      {
+        "file": "width-1024.png",
+        "sha256": "9e3739a265d04dc3c715676ae5a1b017b595e17003e439946e4ed4c08ece49eb"
+      },
+      {
+        "file": "width-1440.png",
+        "sha256": "c6079e88cb7a3224acf53d4b7b4c1507b17b69d5ef492fd2f3cffab07b914731"
+      },
+      {
+        "file": "width-1920.png",
+        "sha256": "de728b11e9896d3f786241fb96c381d5b76017671ce8e44bf977b54d1c3f6420"
+      },
+      {
+        "file": "width-320.png",
+        "sha256": "82feab5c2ab9dd45c415576c7dac65c452c40bc47a99835b3d6355ba0ce9cd9c"
+      },
+      {
+        "file": "width-375.png",
+        "sha256": "b42aedf8e043739b34639a0444447c38df7bc81de870939ab01c1b73932d4e08"
+      },
+      {
+        "file": "width-390.png",
+        "sha256": "fa367a1528df42e3e2597e6eceb66c52afebfc3b9ba02e6b0ed6c76e9f99dfa0"
+      },
+      {
+        "file": "width-430.png",
+        "sha256": "07002cfbfe777e0cf01d820549f14811f8f532e6c0c3908af63e5cec2cea675d"
+      },
+      {
+        "file": "width-768.png",
+        "sha256": "f881fb1c329c9e5c37280c029a2395e60ac75aee0f1b8d03101af9ab5d65d2f6"
+      }
+    ]
+  },
+  "deployment": "NOT_DEPLOYED",
+  "cleanCheckout": {
+    "commit": "4d31def7f48515be4dea29bff65cb6f422905a47",
+    "path": "/private/tmp/florianlux-consolidation-w8QSZY/candidate",
+    "npmCi": "PASS",
+    "lint": "PASS",
+    "typescript": "PASS",
+    "unitTests": "PASS: 21",
+    "build": "PASS",
+    "sourceSecurity": "PASS: 77 files, zero findings, no optional brand directory"
+  },
+  "manualKeyboard": {
+    "surface": "In-app browser, step-by-step native keyboard interaction",
+    "steps": [
+      "Name -> Tab -> company",
+      "Shift+Tab -> name",
+      "Return on empty form -> first-error name focus"
+    ],
+    "result": "PASS: focused field and German errors inspected visually"
+  },
+  "github": {
+    "draftPR": "https://github.com/florianlux/florianlux/pull/2",
+    "ci": "NOT_RUN: no workflows or statuses observed for application commit"
+  }
+}

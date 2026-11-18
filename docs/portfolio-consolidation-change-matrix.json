@@ -1,0 +1,6459 @@
+{
+  "baseCommit": "4b295534684870fbaf9540f2e64663c5e61b5e35",
+  "originalBranch": "master",
+  "branch": "codex/portfolio-website-services-consolidation",
+  "snapshot": "/private/tmp/florianlux-consolidation-w8QSZY",
+  "originalFiles": 86,
+  "stagedAtDiscovery": 0,
+  "conflictsAtDiscovery": 0,
+  "legend": {
+    "A": "Website services",
+    "B": "Existing portfolio features and required integration/release tooling",
+    "C": "Unrelated creative work",
+    "D": "Generated files",
+    "E": "Security-sensitive configuration, reviewed without credentials"
+  },
+  "items": [
+    {
+      "file": ".DS_Store",
+      "categories": [
+        "D"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "ef6651d210e37a5edc06ae2bdd2b27781e2cf77dac995f6564c0dee2445132bb",
+      "currentSha256": "ef6651d210e37a5edc06ae2bdd2b27781e2cf77dac995f6564c0dee2445132bb",
+      "unchangedFromSnapshot": true,
+      "include": false,
+      "note": "Generated/system metadata, excluded from commits.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": []
+    },
+    {
+      "file": "brain.psd",
+      "categories": [
+        "C"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "d84365326d03c6b87e2e644262710069068b8b9bbc63dd1a1db4372eb7df8172",
+      "currentSha256": "d84365326d03c6b87e2e644262710069068b8b9bbc63dd1a1db4372eb7df8172",
+      "unchangedFromSnapshot": true,
+      "include": false,
+      "note": "Independent creative source, preserved locally and excluded from commits.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": []
+    },
+    {
+      "file": "docs/PORTFOLIO_WEBSITES_CONSOLIDATION.md",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "new during consolidation",
+      "snapshotSha256": null,
+      "currentSha256": "4b08b7036fad870d41480145650bd215bccd42de7e715fbbe073574d4b79aabf",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": []
+    },
+    {
+      "file": "docs/lux-noir-v2/CURRENT_STATE_REPORT.md",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "bf7c6090ecd1e8b7573aee00a80813297f3635f126f7fd3a25c041d422a14e11",
+      "currentSha256": "bf7c6090ecd1e8b7573aee00a80813297f3635f126f7fd3a25c041d422a14e11",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,52 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "docs/lux-noir-v2/DEPLOYMENT_CHECKLIST.md",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "22117e3efd1638994f3ba33f6c9e055aa364506f7e6709b8de91a1b1f9039996",
+      "currentSha256": "22117e3efd1638994f3ba33f6c9e055aa364506f7e6709b8de91a1b1f9039996",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,28 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "docs/lux-noir-v2/DESIGN_SYSTEM.md",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "c767b4ab214dd879a6c670d2ec38c76f93077645be076191bb7196679c25b902",
+      "currentSha256": "c767b4ab214dd879a6c670d2ec38c76f93077645be076191bb7196679c25b902",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,60 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "docs/lux-noir-v2/IMPLEMENTATION_SUMMARY.md",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "37ed3d91aea19183904363b25898f19d7cbe0ae2196f515c51c7a2ad968c4b43",
+      "currentSha256": "37ed3d91aea19183904363b25898f19d7cbe0ae2196f515c51c7a2ad968c4b43",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,24 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "docs/lux-noir-v2/PERFORMANCE_REPORT.md",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "fb295e4df108c1cc5b5de6fbe009141b1a884facb96310026510d74c49d62a77",
+      "currentSha256": "fb295e4df108c1cc5b5de6fbe009141b1a884facb96310026510d74c49d62a77",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,29 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "docs/lux-noir-v2/QA_REPORT.md",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "f566b1f4f91a73a3a4218807d1749444e1f6f8ed75a586e6992037ceba4bb774",
+      "currentSha256": "f566b1f4f91a73a3a4218807d1749444e1f6f8ed75a586e6992037ceba4bb774",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,51 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "docs/motionswitch-audit.txt",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "4df1bd122eeab67e2a8aeb4fd5cc8f4c1056344439edfe2c2c795c6e34947bf5",
+      "currentSha256": "4df1bd122eeab67e2a8aeb4fd5cc8f4c1056344439edfe2c2c795c6e34947bf5",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,73 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "docs/motionswitch-qa.txt",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "0673e245a75e96eb2db11099bf4b847b4768b94201d9b26a92adf357d6d7f405",
+      "currentSha256": "0673e245a75e96eb2db11099bf4b847b4768b94201d9b26a92adf357d6d7f405",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,55 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "docs/portfolio-audit.md",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "c87e1d47c0a91d457723ad54b5c1f3db833512d912c8db6fd236021216e2d049",
+      "currentSha256": "c87e1d47c0a91d457723ad54b5c1f3db833512d912c8db6fd236021216e2d049",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,77 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "docs/portfolio-consolidation-change-matrix.json",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "new during consolidation",
+      "snapshotSha256": null,
+      "currentSha256": null,
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": []
+    },
+    {
+      "file": "docs/portfolio-integrations.md",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "8e937bf75e7905b5335502767536eb102a5b73bcf06071679c801211d8a45a92",
+      "currentSha256": "8e937bf75e7905b5335502767536eb102a5b73bcf06071679c801211d8a45a92",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,44 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "docs/portfolio-validation.md",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "3da91480d6d457ea0b92ccd3d443fef8e9ea181d00c8f0ff0e9068c7e3604aa6",
+      "currentSha256": "3da91480d6d457ea0b92ccd3d443fef8e9ea181d00c8f0ff0e9068c7e3604aa6",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,85 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "docs/portfolio-websites-validation.json",
+      "categories": [
+        "A"
+      ],
+      "statusBefore": "new during consolidation",
+      "snapshotSha256": null,
+      "currentSha256": "ca6a7e5c57d22a672f834046215a4c46b963ba45311e677f492f5eae64d9c556",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": []
+    },
+    {
+      "file": "portfolio/.env.example",
+      "categories": [
+        "B",
+        "E"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "2b8aa398404ce4cf2354ca70fcc2f91011204280861d80f9a0e2bc866faedd58",
+      "currentSha256": "2b8aa398404ce4cf2354ca70fcc2f91011204280861d80f9a0e2bc866faedd58",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed existing configuration or disabled server boundary; no real credentials and no provider activation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,22 @@",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/.gitignore",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "4c6ac525982a4aea8f7f87fe231176a72bb5a11b054aa690330462abb372c7f8",
+      "currentSha256": "c56387dafa04f105fcc5691b3e8e8a5edcda7d2bb4768032d76c0f9d4e15e3b0",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [
+        {
+          "header": "@@ -32,6 +32,7 @@ yarn-error.log*",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -39,3 +40,10 @@ yarn-error.log*",
+          "categories": [
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -34,0 +35 @@ yarn-error.log*",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -41,0 +43,7 @@ next-env.d.ts",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/README.md",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "a4ecb088d1ddcd0adf1af2b04fbecdcd94709894f8a491df7af847a7cafaf07a",
+      "currentSha256": "a2626c649899e08f40a08695ac646f555ee32b221478bc51cbfac770752afd00",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,36 +1,153 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -1 +1 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3 +3 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5 +5 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -7 +7,4 @@ First, run the development server:",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -9,6 +11,0 @@ npm run dev",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -17 +14,129 @@ bun dev",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -19 +144 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -21 +146 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -23 +148 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -25 +150 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -27,2 +152 @@ To learn more about Next.js, take a look at the following resources:",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -30 +154 @@ To learn more about Next.js, take a look at the following resources:",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -32 +156,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -34 +162,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -36 +169,3 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/brand/MOTIONSWITCH_SOCIAL_KIT.html",
+      "categories": [
+        "C"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "3380096e8317125e18d419ef27a2921d3f2c2287539f6e92a699a3ad936ac834",
+      "currentSha256": "3380096e8317125e18d419ef27a2921d3f2c2287539f6e92a699a3ad936ac834",
+      "unchangedFromSnapshot": true,
+      "include": false,
+      "note": "Independent creative source, preserved locally and excluded from commits.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": []
+    },
+    {
+      "file": "portfolio/next.config.ts",
+      "categories": [
+        "B",
+        "E"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "185f4c9a2c604e27d93a53212a40b3eea695cc82b2cc5d9c6f95c579b167f419",
+      "currentSha256": "185f4c9a2c604e27d93a53212a40b3eea695cc82b2cc5d9c6f95c579b167f419",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed existing configuration or disabled server boundary; no real credentials and no provider activation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,7 +1,39 @@",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -1,0 +2 @@ import type { NextConfig } from \"next\";",
+          "categories": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "header": "@@ -2,0 +4,20 @@ import type { NextConfig } from \"next\";",
+          "categories": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "header": "@@ -4 +25,13 @@ const nextConfig: NextConfig = {",
+          "categories": [
+            "B",
+            "E"
+          ]
+        },
+        {
+          "header": "@@ -6 +38,0 @@ const nextConfig: NextConfig = {",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/package-lock.json",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "90a6d19e647b2b8ee48f4c0b08a3dac0ce99635c46c208ad22ab343b0134dfc6",
+      "currentSha256": "1ad2fe51597167cf22034878b3f781efda9a59d4849550362e9613d02d1f9c84",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -9,7 +9,7 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -19,7 +19,7 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -38,13 +38,13 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -53,9 +53,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -63,21 +63,21 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -94,14 +94,14 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -111,14 +111,14 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -128,9 +128,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -138,29 +138,29 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -170,9 +170,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -180,9 +180,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -190,9 +190,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -200,27 +200,27 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -230,33 +230,33 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -264,14 +264,14 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -290,9 +290,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -455,29 +455,43 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -517,9 +531,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -529,19 +543,19 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -551,19 +565,38 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -577,9 +610,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -593,9 +626,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -612,9 +645,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -631,9 +664,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -650,9 +683,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -669,9 +702,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -688,9 +721,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -707,9 +740,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -726,9 +759,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -745,9 +778,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -760,19 +793,19 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -785,19 +818,19 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -810,19 +843,19 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -835,19 +868,19 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -860,19 +893,19 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -885,19 +918,19 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -910,19 +943,19 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -935,38 +968,54 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -976,16 +1025,16 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -995,16 +1044,16 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1014,7 +1063,7 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1084,25 +1133,26 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1116,9 +1166,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1132,9 +1182,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1151,9 +1201,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1170,9 +1220,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1189,9 +1239,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1208,9 +1258,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1224,9 +1274,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1295,9 +1345,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1847,16 +1897,16 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2530,9 +2580,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2542,9 +2592,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2566,9 +2616,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2586,11 +2636,11 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2660,9 +2710,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2919,9 +2969,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3207,21 +3257,21 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3439,9 +3489,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3455,7 +3505,7 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3604,9 +3654,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -4542,10 +4592,20 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5070,9 +5130,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5111,16 +5171,16 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5130,15 +5190,15 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5163,34 +5223,6 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5211,11 +5243,14 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5478,10 +5513,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5498,7 +5532,7 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5831,54 +5865,59 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5988,9 +6027,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -6520,9 +6559,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -6696,9 +6735,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -12 +12 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -22 +22 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -41,3 +41,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -47 +47 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -56,3 +56,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -66,3 +66,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -72,9 +72,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -97,3 +97,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -103,2 +103,2 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -114,3 +114,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -120,2 +120,2 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -131,3 +131,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -141,3 +141,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -147,2 +147,2 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -155,3 +155,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -161,3 +161,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -173,3 +173,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -183,3 +183,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -193,3 +193,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -203,3 +203,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -209,2 +209,2 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -217,3 +217,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -223 +223 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -233,3 +233,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -239,3 +239,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -248,3 +248,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -254,6 +254,6 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -267,3 +267,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -273,2 +273,2 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -293,3 +293,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -458,3 +458,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -462,0 +463,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -468,3 +471,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -474 +477,2 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -480,0 +485,10 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -520,3 +534,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -532 +546 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -538 +552 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -542,3 +556,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -554 +568 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -560 +574,20 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -564,3 +597,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -580,3 +613,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -596,3 +629,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -615,3 +648,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -634,3 +667,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -653,3 +686,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -672,3 +705,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -691,3 +724,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -710,3 +743,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -729,3 +762,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -748,3 +781,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -763 +796 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -769 +802 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -773,3 +806,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -788 +821 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -794 +827 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -798,3 +831,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -813 +846 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -819 +852 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -823,3 +856,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -838 +871 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -844 +877 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -848,3 +881,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -863 +896 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -869 +902 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -873,3 +906,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -888 +921 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -894 +927 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -898,3 +931,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -913 +946 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -919 +952 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -923,3 +956,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -938 +971 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -944 +977 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -948,3 +981,19 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -954 +1003 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -957 +1006 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -960 +1009 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -967,3 +1016,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -979 +1028 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -986,3 +1035,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -998 +1047 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1005,3 +1054,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1017 +1066 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1087,3 +1136,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1093,3 +1142,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1098,0 +1148 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1103,3 +1153,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1119,3 +1169,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1135,3 +1185,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1154,3 +1204,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1173,3 +1223,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1192,3 +1242,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1211,3 +1261,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1227,3 +1277,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1298,3 +1348,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1850,3 +1900,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1859 +1909 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2533,3 +2583,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2545,3 +2595,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2569,3 +2619,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2589,5 +2639,5 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2663,3 +2713,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2922,3 +2972,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3210,3 +3260,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3216 +3266 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3222 +3272 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3224 +3274 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3442,3 +3492,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3458 +3508 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3607,3 +3657,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -4545,3 +4595,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -4548,0 +4599,10 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5073,3 +5133,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5114,3 +5174,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5119,2 +5179,2 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5123 +5183 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5133,9 +5193,9 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5166,28 +5225,0 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5214,3 +5246,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5218 +5250,4 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5481,4 +5516,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5501 +5535 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5834,4 +5868,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5841 +5874 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5843 +5876 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5846 +5879 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5852,24 +5885,30 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5879,3 +5918,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5991,3 +6030,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -6523,3 +6562,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -6699,3 +6738,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/package.json",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "d87cbacd15cb37f0a111c28d004feec0b99451459bcd08462ee43a3bb9540e84",
+      "currentSha256": "636037cbbe43a440f5188d8fff828ad7bd5d07b7a7134806d693ffaed3bc6cc6",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -3,14 +3,22 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -20,7 +28,7 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -6,4 +6,13 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -13 +22 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -23 +32 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/public/identity/florian-supplied-portrait.png",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "e276009253975036e7bea07c08565b3e9fddb6564523c4a2b32c8b213ccc24bf",
+      "currentSha256": "e276009253975036e7bea07c08565b3e9fddb6564523c4a2b32c8b213ccc24bf",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": []
+    },
+    {
+      "file": "portfolio/scripts/check-public-release.d.mts",
+      "categories": [
+        "B",
+        "E"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "22908c252a4f407448653c307a7abe06a8c9cae6d7770b0220d7f1b2e33ac77f",
+      "currentSha256": "22908c252a4f407448653c307a7abe06a8c9cae6d7770b0220d7f1b2e33ac77f",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed existing configuration or disabled server boundary; no real credentials and no provider activation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,2 @@",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/scripts/check-public-release.mjs",
+      "categories": [
+        "B",
+        "E"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "c2a90f32bb2982908b418b27acef219e25b807269ae97f64e5f314025a284bde",
+      "currentSha256": "c2a90f32bb2982908b418b27acef219e25b807269ae97f64e5f314025a284bde",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed existing configuration or disabled server boundary; no real credentials and no provider activation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,28 @@",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/scripts/check-source-security.mjs",
+      "categories": [
+        "B",
+        "E"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "1daa380b9393c57e6bcbfebfdc0e6e155d889fe66bb504c0d22407a0d7c07dda",
+      "currentSha256": "e5220d1bf680baa2a42bceab95fcd3504ab5b8a48eef6d2b94f150694425d783",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed existing configuration or disabled server boundary; no real credentials and no provider activation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,27 @@",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/scripts/start-portfolio.mjs",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "ccd3acfbbd5266ebb06c0c1e0d579bcee4d59ade8bca65614debba026d3c04f4",
+      "currentSha256": "ccd3acfbbd5266ebb06c0c1e0d579bcee4d59ade8bca65614debba026d3c04f4",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,30 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/scripts/verify-lux-noir.cjs",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "c5af1411d35cf784b20e8b805b6d2112451d085a2bcfc7654f5a2349ec57b795",
+      "currentSha256": "c5af1411d35cf784b20e8b805b6d2112451d085a2bcfc7654f5a2349ec57b795",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,194 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/scripts/verify-portfolio.mjs",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "79813eefce27ac3fa7b3762c1baf905b3168a30cb29233ecc140eefa35278539",
+      "currentSha256": "79813eefce27ac3fa7b3762c1baf905b3168a30cb29233ecc140eefa35278539",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,121 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/scripts/verify-release.cjs",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "3cabc5f580aef11d9274630ba59d781fec6bd51fcb074ac5000fbb02ae8de139",
+      "currentSha256": "3cabc5f580aef11d9274630ba59d781fec6bd51fcb074ac5000fbb02ae8de139",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,48 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/scripts/verify-website-services.cjs",
+      "categories": [
+        "A"
+      ],
+      "statusBefore": "new during consolidation",
+      "snapshotSha256": null,
+      "currentSha256": "60f5b98a0f50c4806f999d4fe4f097916599cd5fd794e928963065029844eae6",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,81 @@",
+          "categories": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/about/page.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "556a8c2f434c9cd89460f3d37a973223e83433338ec628e686aa9fc665bae961",
+      "currentSha256": "556a8c2f434c9cd89460f3d37a973223e83433338ec628e686aa9fc665bae961",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,182 +1,110 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1 @@",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3,46 +4,8 @@ import Link from \"next/link\";",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -51,0 +15 @@ export default function AboutPage() {",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -58,43 +22,13 @@ export default function AboutPage() {",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -102,45 +36,46 @@ export default function AboutPage() {",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -148,29 +83,22 @@ export default function AboutPage() {",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -179 +107 @@ export default function AboutPage() {",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/api/contact/route.ts",
+      "categories": [
+        "B",
+        "E"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "db1c548d5b4cede7d7703cb45071a96bd75207e04a6177120cfed4211dff0439",
+      "currentSha256": "db1c548d5b4cede7d7703cb45071a96bd75207e04a6177120cfed4211dff0439",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed existing configuration or disabled server boundary; no real credentials and no provider activation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,12 @@",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/contact/page.tsx",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "357163520455d5ff74f3b985181aee61208e8d1ec692f7dd9cd1d6a7f07f5a1d",
+      "currentSha256": "357163520455d5ff74f3b985181aee61208e8d1ec692f7dd9cd1d6a7f07f5a1d",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,160 +1,80 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3 +4,3 @@ import Link from \"next/link\";",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5,11 +8,7 @@ import { BreadcrumbSchema } from \"@/components/StructuredData\";",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -17,2 +16,2 @@ export default function ContactPage() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -24 +23 @@ export default function ContactPage() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -27,52 +26,17 @@ export default function ContactPage() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -80,22 +44,3 @@ export default function ContactPage() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -103,27 +48,17 @@ export default function ContactPage() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -131,25 +66,10 @@ export default function ContactPage() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -157 +77 @@ export default function ContactPage() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/datenschutz/page.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "cb6bd9b9da2c1b6192cbbc2bc57c78cc3b14fab8a89972c4458cb8cd99e328dc",
+      "currentSha256": "cb6bd9b9da2c1b6192cbbc2bc57c78cc3b14fab8a89972c4458cb8cd99e328dc",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,22 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/favicon.ico",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "08839be4339e519f4dacad9b4d461a431e08f864c73f76738680bdc3fca5d555",
+      "currentSha256": "08839be4339e519f4dacad9b4d461a431e08f864c73f76738680bdc3fca5d555",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": []
+    },
+    {
+      "file": "portfolio/src/app/fonts/InstrumentSans-OFL.txt",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "9e27a72ed30eb49a08678f6a5d6ed98ec7ba5368f541637ee0683ec9134ef966",
+      "currentSha256": "9e27a72ed30eb49a08678f6a5d6ed98ec7ba5368f541637ee0683ec9134ef966",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,93 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/fonts/JetBrainsMono-OFL.txt",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+      "currentSha256": "b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,93 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/fonts/README.md",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "5a60740d081edd23a0863e73e22d70c46f4b0f8ace898f712816d45accf463f0",
+      "currentSha256": "5a60740d081edd23a0863e73e22d70c46f4b0f8ace898f712816d45accf463f0",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,7 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/fonts/instrument-sans-latin.woff2",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "6219bc4bfdfc5d9b2201dcdf046218b122a758f932e25ed5f168f929b7ca2311",
+      "currentSha256": "6219bc4bfdfc5d9b2201dcdf046218b122a758f932e25ed5f168f929b7ca2311",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": []
+    },
+    {
+      "file": "portfolio/src/app/fonts/jetbrains-mono-latin.woff2",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "d3dcdccdaba31643defe2317942155d4af3ee03951d058adbe8bc02b13e61b0a",
+      "currentSha256": "d3dcdccdaba31643defe2317942155d4af3ee03951d058adbe8bc02b13e61b0a",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": []
+    },
+    {
+      "file": "portfolio/src/app/globals.css",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "a32eef8be21eb4a0c23ef227deb9ee5a04514c2366c299cdc33734f9b6c3290a",
+      "currentSha256": "a32eef8be21eb4a0c23ef227deb9ee5a04514c2366c299cdc33734f9b6c3290a",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,2206 +1,1183 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -4,12 +4,7 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -19 +14,19 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -21,2 +33,0 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -25 +35,0 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -27,0 +38 @@ html {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -29 +40,3 @@ html {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -31,8 +44,4 @@ body {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -40,15 +48,0 @@ body {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -56 +49,0 @@ body::before {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -61 +54,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -63,2 +61,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -66 +63,0 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -68,2 +65,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -71,6 +68,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -78 +72 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -80 +73,0 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -82,3 +75,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -86 +79,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -89,2 +85,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -92 +89 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -94,7 +91,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -102,4 +98,11 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -107 +110 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -109,11 +112,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -121,4 +115,12 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -126,6 +128,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -133 +131,8 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -137,6 +142,7 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -144 +149,0 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -146,5 +151,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -152 +154 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -154 +156 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -156 +158 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -158,4 +160,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -163 +163,0 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -165,8 +165,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -174,13 +168,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -188,11 +172,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -200,3 +176,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -204,9 +179,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -214,10 +184,9 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -225,4 +194,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -230,5 +197,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -236,12 +204,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -249,10 +211,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -260,14 +218,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -275,8 +224,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -284,5 +229 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -290,6 +231,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -297,7 +235,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -305,6 +240,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -312,3 +243,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -316,3 +248,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -320,4 +251,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -325,5 +255,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -331,7 +258,17 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -339,7 +276,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -347,8 +279,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -356,5 +284 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -362,6 +286,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -369,6 +293,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -376,4 +297,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -381,8 +303,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -390,6 +308,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -397,6 +314,7 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -404,8 +322,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -413,4 +326,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -418,4 +332,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -423,4 +337,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -428,4 +340,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -433,4 +343,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -438,10 +346,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -449,6 +350,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -456,6 +357 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -463 +359,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -465,6 +365,7 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -472,6 +373,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -479,6 +377,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -486,3 +383,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -490,3 +389,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -494,3 +396,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -498,7 +399 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -506,2 +401,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -509,7 +407,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -517,4 +410 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -522,13 +412,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -536,5 +416,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -542,2 +420,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -545,9 +424,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -555,7 +430,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -563,3 +437,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -567,7 +440,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -575,3 +444,8 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -579,5 +453,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -585,10 +458,0 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -596,10 +460,7 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -607,10 +468,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -618,5 +475,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -624,3 +479,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -628,3 +485,7 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -632,2 +493 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -635 +494,0 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -637,12 +496,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -650,7 +502,9 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -658,4 +512,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -663,4 +518,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -668,4 +522,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -673,9 +525,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -683,8 +530,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -692,3 +534,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -696,230 +539,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -927,6 +542,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -934,16 +546,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -951,7 +552 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -959,33 +554,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -993,27 +557 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1021 +558,0 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1023,77 +560,7 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1101,5 +568,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1107,15 +572,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1123,2 +576 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1126,6 +578,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1133,5 +581 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1139,81 +583 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1221,17 +584,0 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1239,62 +586 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1302,5 +588,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1308,166 +592,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1475,7 +598,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1483,2 +603 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1486,3 +605 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1490,31 +607,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1523,11 +612 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1535,9 +614,21 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1545,4 +636,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1550,4 +641,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1555,3 +647,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1559,5 +653,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1565,9 +658,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1575,9 +664,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1585,6 +667 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1592 +669,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1594,17 +672,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1612,5 +679,7 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1618,7 +687,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1625,0 +691 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1627 +693 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1629,9 +695,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1639,3 +701,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1643,11 +704,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1655,5 +708,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1661,3 +712,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1665,3 +718,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1669,9 +725,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1679,3 +728,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1683,5 +734,0 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1689,5 +736,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1695,7 +741,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1703,8 +748,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1712,3 +751,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1716,6 +758,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1723,8 +761,0 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1732,7 +763,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1740,10 +767,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1751,7 +772,9 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1759,3 +782,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1763,4 +787,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1768,3 +790,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1772,4 +794,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1777,6 +801,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1784,9 +804,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1794,4 +810,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1799,2 +813 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1802,3 +815,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1806,12 +820,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1819,3 +823,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1823,4 +826,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1828,3 +832,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1832,3 +837,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1836,9 +841,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1846,2 +846,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1850,9 +852,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1860,5 +855,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1866,8 +858,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1875,7 +861,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1883,5 +865,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1889,9 +871,16 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1899,15 +888,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1915,25 +893,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1941,3 +897,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1945,3 +903,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1949,3 +907,9 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1953,4 +917,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1958,3 +921,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1962,7 +924,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1970,3 +927,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1974,3 +930,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1978,3 +935,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1982,3 +939,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1986,4 +942,8 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1991,3 +951,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -1995,8 +954,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2004,3 +957,7 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2008,6 +965,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2015,3 +971,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2019,3 +974,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2023,5 +977,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2029,4 +981,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2034,3 +985,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2038,5 +988,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2044,5 +991,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2050,4 +994,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2055,5 +998,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2061,3 +1001,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2065,3 +1004,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2069,3 +1007,5 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2073,4 +1013,6 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2078,3 +1020,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2082,3 +1023,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2086,4 +1026,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2091,3 +1029,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2095,4 +1032,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2100,3 +1035,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2105,18 +1041,33 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2124,3 +1075,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2128,3 +1079,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2132,3 +1083,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2136,3 +1086,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2140,3 +1090,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2144,4 +1095,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2149,3 +1098,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2153,5 +1101,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2159,7 +1105,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2167,3 +1108,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2171,3 +1112,3 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2175,3 +1116,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2179,5 +1119,2 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2185,5 +1122 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2191,15 +1124,55 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2206,0 +1180,4 @@ a {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/icon.svg",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "b7f18016d3f7ac33be5ec743b19e27b712e1e2188dd759a6bc3c7fbe15cbdeb4",
+      "currentSha256": "b7f18016d3f7ac33be5ec743b19e27b712e1e2188dd759a6bc3c7fbe15cbdeb4",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/impressum/page.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "aa09855d59fec0f744df33981f72da3ba63375fb9ec452c2fdb30c7361c8852a",
+      "currentSha256": "aa09855d59fec0f744df33981f72da3ba63375fb9ec452c2fdb30c7361c8852a",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,19 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/journal/[slug]/page.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "351882d190a9791fb8b1ed09b91e0aceabb52804897fec1e7dd48eac9c336d76",
+      "currentSha256": "351882d190a9791fb8b1ed09b91e0aceabb52804897fec1e7dd48eac9c336d76",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,85 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/journal/page.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "22871f61749d97d9affa845f28143418a2f177ad56e6fc96474b72cd866e85a0",
+      "currentSha256": "22871f61749d97d9affa845f28143418a2f177ad56e6fc96474b72cd866e85a0",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,53 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/layout.tsx",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "fb8a10bf3f46d53fc8e731718acb0f01751c77f05ac4f7253b415a191a1f6598",
+      "currentSha256": "fb8a10bf3f46d53fc8e731718acb0f01751c77f05ac4f7253b415a191a1f6598",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,66 +1,68 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -1,2 +1,3 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -4,0 +6 @@ import Footer from \"@/components/Footer\";",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5,0 +8 @@ import \"./globals.css\";",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -7 +10,2 @@ import \"./globals.css\";",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -9,2 +13,4 @@ const instrumentSans = Instrument_Sans({",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -12,2 +18,2 @@ const instrumentSans = Instrument_Sans({",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -15,2 +21,3 @@ const jetbrainsMono = JetBrains_Mono({",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -18 +25 @@ const jetbrainsMono = JetBrains_Mono({",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -19,0 +27 @@ export const metadata: Metadata = {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -21,2 +29 @@ export const metadata: Metadata = {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -25,6 +32,2 @@ export const metadata: Metadata = {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -33,5 +36,5 @@ export const metadata: Metadata = {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -41,7 +44,3 @@ export const metadata: Metadata = {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -48,0 +48 @@ export const metadata: Metadata = {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -50 +49,0 @@ export const metadata: Metadata = {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -53,3 +52 @@ export default function RootLayout({",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -59 +56 @@ export default function RootLayout({",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -61 +58,4 @@ export default function RootLayout({",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -63 +63,3 @@ export default function RootLayout({",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/motionswitch-data.ts",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "827e6399cc428212bc84962fddb7c7279a1d171325ace13c33b3489a7f4862d2",
+      "currentSha256": "827e6399cc428212bc84962fddb7c7279a1d171325ace13c33b3489a7f4862d2",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,28 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/motionswitch.css",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "cf151c7e9eeb36716277ffc24557cc37508ec9778f89e33384384cefbeb26b0c",
+      "currentSha256": "82312a7ebe5b41c54681f1b719fd870e89fc230987825d0f6ee3589a737e61d6",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,186 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/opengraph-image.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "4a66e46c44aadd68d4c5da01cf88d10e6c084d09c4cfd7055ac3cabc4ff112eb",
+      "currentSha256": "4a66e46c44aadd68d4c5da01cf88d10e6c084d09c4cfd7055ac3cabc4ff112eb",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,58 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/page-metadata.ts",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "21db81d916ff5d642aa7f233749bd248fc186017e8a63c5f23f2cf14a46349df",
+      "currentSha256": "21db81d916ff5d642aa7f233749bd248fc186017e8a63c5f23f2cf14a46349df",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,37 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/page.tsx",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "232e1e8e297dd3bc0832e9862bbeeba3bfabc391a6d2c7777647578b598898d6",
+      "currentSha256": "61eb232420a127ae4f4d6d521e131b502b571e273f8e5b7c13ccb0c0f028186e",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,202 +1,16 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -1 +1 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3,4 +3,3 @@ import FadeIn from \"@/components/FadeIn\";",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -8,111 +7,3 @@ import WebsiteServiceBlock from \"@/components/WebsiteServiceBlock\";",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -120,82 +11,6 @@ export default function HomePage() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/projects/luxlabs/page.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "db230bf4d046741e3d8be325dc5940f214a1380df1caa847ad45f071ee44c501",
+      "currentSha256": "db230bf4d046741e3d8be325dc5940f214a1380df1caa847ad45f071ee44c501",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,5 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/projects/neurocodex/page.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "60622d7993c2943207f0e3ae8467d0d1259d64d7261523ef059fc6a348bff077",
+      "currentSha256": "60622d7993c2943207f0e3ae8467d0d1259d64d7261523ef059fc6a348bff077",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,271 +1,11 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1 @@",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2,269 +3,8 @@ import type { Metadata } from \"next\";",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/projects/page.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "deb02c5bc8089cac08fcae82ffefd2494f5bfdf826b6b427dc9c52bb1f63ef39",
+      "currentSha256": "deb02c5bc8089cac08fcae82ffefd2494f5bfdf826b6b427dc9c52bb1f63ef39",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,22 +1,14 @@",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -25,169 +17,20 @@ export default function ProjectsPage() {",
+          "categories": [
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1 @@",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3 +4 @@ import Link from \"next/link\";",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5,11 +6,5 @@ import { BreadcrumbSchema } from \"@/components/StructuredData\";",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -17,3 +11,0 @@ export default function ProjectsPage() {",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -28,43 +20,13 @@ export default function ProjectsPage() {",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -72,119 +33,0 @@ export default function ProjectsPage() {",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/projects/suite/page.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "813e8e6d1836d559deed4d12e6d646581511110a59093f33164def015c1e8134",
+      "currentSha256": "813e8e6d1836d559deed4d12e6d646581511110a59093f33164def015c1e8134",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,11 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/projects/synapedia/page.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "328b36396f37a900040a60dd5a841b6d13b81f779a756487e40c28a30988d42b",
+      "currentSha256": "328b36396f37a900040a60dd5a841b6d13b81f779a756487e40c28a30988d42b",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,273 +1,11 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1 @@",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -2,271 +3,8 @@ import type { Metadata } from \"next\";",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/publication.ts",
+      "categories": [
+        "B",
+        "E"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "0c2e53168ec58ec662dc8c01f839b2d512c1512372aed9542c84455609a74db4",
+      "currentSha256": "0c2e53168ec58ec662dc8c01f839b2d512c1512372aed9542c84455609a74db4",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed existing configuration or disabled server boundary; no real credentials and no provider activation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,2 @@",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/release-evidence.json",
+      "categories": [
+        "B",
+        "E"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "13bec48974386adfe691005c8e83061e51ec47a2b4f5c77339fc5a39386586e4",
+      "currentSha256": "13bec48974386adfe691005c8e83061e51ec47a2b4f5c77339fc5a39386586e4",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed existing configuration or disabled server boundary; no real credentials and no provider activation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,38 @@",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/robots.ts",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "19696a4294f8b0b9e5ec00ea741f0a6f1a4bbcbe61e8eab5f6dd4d437658d642",
+      "currentSha256": "19696a4294f8b0b9e5ec00ea741f0a6f1a4bbcbe61e8eab5f6dd4d437658d642",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,11 +1,10 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -2 +2,2 @@ import type { MetadataRoute } from \"next\";",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -5,5 +6,3 @@ export default function robots(): MetadataRoute.Robots {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/site-data.ts",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "67160e3aff1939acabc00040cd4bc922abf599c886739b1b6600cd846e7f59ab",
+      "currentSha256": "67160e3aff1939acabc00040cd4bc922abf599c886739b1b6600cd846e7f59ab",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,7 +1,21 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -9,129 +23,182 @@ export type Project = {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,14 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -4 +18 @@ export type Project = {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -11,0 +26 @@ export type Project = {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -13,18 +27,0 @@ export type Project = {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -34,3 +31,3 @@ export const projects: Project[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -38,2 +35,2 @@ export const projects: Project[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -44,3 +41,3 @@ export const projects: Project[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -47,0 +45,6 @@ export const projects: Project[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -50,15 +53,4 @@ export const projects: Project[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -66 +58,15 @@ export const focusAreas: FocusArea[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -69 +75,4 @@ export const focusAreas: FocusArea[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -71 +80,15 @@ export const focusAreas: FocusArea[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -74,3 +97,12 @@ export const focusAreas: FocusArea[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -79,8 +111,6 @@ export const focusAreas: FocusArea[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -88,4 +118,3 @@ export const shippedOutcomes: ShippedOutcome[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -94,4 +123,3 @@ export const shippedOutcomes: ShippedOutcome[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -100,4 +128,3 @@ export const shippedOutcomes: ShippedOutcome[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -106,12 +133,7 @@ export const shippedOutcomes: ShippedOutcome[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -119,3 +141,19 @@ export const stackGroups: StackGroup[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -124,3 +162,19 @@ export const stackGroups: StackGroup[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -128,4 +181,0 @@ export const stackGroups: StackGroup[] = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -133,2 +183,19 @@ export const socialLinks = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -136,2 +203,2 @@ export const socialLinks = [",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/sitemap.ts",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "9ef7d2da6a0e2f10ddb98b065394a9fe86b34b675b1cd4030f7753a69af8c709",
+      "currentSha256": "9ef7d2da6a0e2f10ddb98b065394a9fe86b34b675b1cd4030f7753a69af8c709",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,50 +1,23 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -2 +2,2 @@ import type { MetadataRoute } from \"next\";",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -4,2 +5 @@ export default function sitemap(): MetadataRoute.Sitemap {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -7,43 +7,16 @@ export default function sitemap(): MetadataRoute.Sitemap {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/website-service.css",
+      "categories": [
+        "A"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "d692b0e8196885f85929fbf803308fc99bc4d1f24964bfd854d8d0b47fedee30",
+      "currentSha256": "57e6a3f4789b1f99a50165ccfcc6c0702e87ff1019dca300378abf3efdc7f1e8",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,1196 @@",
+          "categories": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/app/websites/page.tsx",
+      "categories": [
+        "A"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "f58dab8029a176ef66a1130a2b82310a8c08e48ec2f2dae351a31532c3ea9653",
+      "currentSha256": "239b406a60f69dcea92289898f5dddbfb1581d9ceb5f2cd848b6499a1bb0fbd4",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,9 +1,14 @@",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -19,6 +24,15 @@ export const metadata: Metadata = {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -132,15 +146,27 @@ const packages = [",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -161,19 +187,32 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -182,8 +221,8 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -286,7 +325,9 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -353,21 +394,29 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1 @@",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -2,0 +4 @@ import Link from \"next/link\";",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -6 +8,4 @@ import WebsiteRequestForm from \"@/components/WebsiteRequestForm\";",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -16,0 +22,6 @@ export const metadata: Metadata = {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -21,0 +33,9 @@ export const metadata: Metadata = {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -135,4 +155,16 @@ const process = [",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -143 +175 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -164 +196,4 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -167 +202,4 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -171,6 +209,13 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -185,2 +230,2 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -289 +334,3 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -356 +403,3 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -362 +411,4 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -365 +417,4 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -371 +426 @@ export default function WebsitesPage() {",
+          "categories": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/ContactForm.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "e6dd51483043427350881a0a27226159aba675c855d16bbf3e006d84e1183415",
+      "currentSha256": "e6dd51483043427350881a0a27226159aba675c855d16bbf3e006d84e1183415",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,73 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/ContactSection.tsx",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "e6099a176d922b8f992654c37081a3848cd06d044abcae09a9711adc544cb161",
+      "currentSha256": "e6099a176d922b8f992654c37081a3848cd06d044abcae09a9711adc544cb161",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,4 +1,5 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -16,7 +17,7 @@ export default function ContactSection({ links }: ContactSectionProps) {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -1,0 +2 @@ import Link from \"next/link\";",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -19 +20 @@ export default function ContactSection({ links }: ContactSectionProps) {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/Ecosystem.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "693dd9c5d3dd3766c56c0b5a093a068f1f84d786fdaf33164f191235b9d8a776",
+      "currentSha256": "693dd9c5d3dd3766c56c0b5a093a068f1f84d786fdaf33164f191235b9d8a776",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,112 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/FadeIn.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "ec4e8d7ea92f28baa5fa2340bd5a8f717e68f74fb349f48890fac3b533cc8aaa",
+      "currentSha256": "ec4e8d7ea92f28baa5fa2340bd5a8f717e68f74fb349f48890fac3b533cc8aaa",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,64 +1,51 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -2,5 +2,7 @@",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -12,21 +14,2 @@ interface FadeInProps {",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -34,5 +17,20 @@ export default function FadeIn({",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -40 +38 @@ export default function FadeIn({",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -42,17 +39,0 @@ export default function FadeIn({",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -59,0 +41,6 @@ export default function FadeIn({",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -62 +49 @@ export default function FadeIn({",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/Footer.tsx",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "8bf7cf7672f72bcc6656c926dbbbcf3a60d0b587e6b706fe28965c184c0705aa",
+      "currentSha256": "8bf7cf7672f72bcc6656c926dbbbcf3a60d0b587e6b706fe28965c184c0705aa",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,38 +1,39 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,2 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -3,26 +5,28 @@ export default function Footer() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -30,6 +34,3 @@ export default function Footer() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/Hero.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "b13126f424c56d5632fa912a46a624e60c402bfcf7904e9540d60b1e194bc983",
+      "currentSha256": "b13126f424c56d5632fa912a46a624e60c402bfcf7904e9540d60b1e194bc983",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,75 +1,48 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -2,2 +2,2 @@ import Link from \"next/link\";",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -6,23 +6,5 @@ export default function Hero() {",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -30,28 +12,20 @@ export default function Hero() {",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -59,12 +33,5 @@ export default function Hero() {",
+          "categories": [
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -72,0 +40,6 @@ export default function Hero() {",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/LegalDraft.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "1251b736adfd93ccaf3c7ff42bc1467bfbd4a26f98a5e57ee4fe9b71f7ec7e76",
+      "currentSha256": "1251b736adfd93ccaf3c7ff42bc1467bfbd4a26f98a5e57ee4fe9b71f7ec7e76",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,16 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/LuxMark.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "1279e3a0335bf954b98b4d0a590d8b7d404a18cf51dc2f60f56d1d2cacf0e42f",
+      "currentSha256": "1279e3a0335bf954b98b4d0a590d8b7d404a18cf51dc2f60f56d1d2cacf0e42f",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,81 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/ModeSwitch.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "e66def64d8822094e6b093040138229001ae09e9097189872a8c2a5aa1f2759f",
+      "currentSha256": "e66def64d8822094e6b093040138229001ae09e9097189872a8c2a5aa1f2759f",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,60 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/MotionEnhancer.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "476c772fff6d94a4d9b24a2b0fce820036019c606ed1c20b5038d1ee8ff21028",
+      "currentSha256": "476c772fff6d94a4d9b24a2b0fce820036019c606ed1c20b5038d1ee8ff21028",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,95 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/MotionHero.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "099999cb03091165324f544d34444b3a3f4ae5ad6c7da9b486caec500be9c635",
+      "currentSha256": "099999cb03091165324f544d34444b3a3f4ae5ad6c7da9b486caec500be9c635",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,15 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/MotionPortrait.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "724851b0deb4bcede59e99902f261d7fff7f37aa467e6ab19003e755ff9a1130",
+      "currentSha256": "724851b0deb4bcede59e99902f261d7fff7f37aa467e6ab19003e755ff9a1130",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,12 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/MotionStory.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "6632d5231e054a9c0c64f4b7650ffe0a73400d5d0fbecb527e26e5d2c9a801d0",
+      "currentSha256": "6632d5231e054a9c0c64f4b7650ffe0a73400d5d0fbecb527e26e5d2c9a801d0",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,15 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/MotionWork.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "26084672fd9853957a5484f66c571ff0ab835dde9ee0e73be519ecefc40e08f8",
+      "currentSha256": "26084672fd9853957a5484f66c571ff0ab835dde9ee0e73be519ecefc40e08f8",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,13 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/Navigation.tsx",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "0b10bd34a7c5f802cd5d7a128f0e5ac3b79683189f18ec5cbad4e64028637ab5",
+      "currentSha256": "0feb22603ca8098328f3e726b75587cd3aff39df38cdb7c62d414f16c8d5c92b",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,127 +1,79 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -2 +1,0 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -4,2 +3,7 @@ import Link from \"next/link\";",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -6,0 +11,3 @@ export default function Navigation() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -8,2 +15,5 @@ export default function Navigation() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -11,4 +21,4 @@ export default function Navigation() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -16,31 +26,31 @@ export default function Navigation() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -48,74 +58,16 @@ export default function Navigation() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -123,4 +75,4 @@ export default function Navigation() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/ProjectDetail.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "347859dbd13a2b297f7526dac469ccbb8f461388029df01944256f42afcf54d7",
+      "currentSha256": "347859dbd13a2b297f7526dac469ccbb8f461388029df01944256f42afcf54d7",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,126 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/ProjectShowcase.tsx",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "25052e15b8932725587ba8c949d5bdeb80e6509c0290b1520d425ce4f62fa48d",
+      "currentSha256": "25052e15b8932725587ba8c949d5bdeb80e6509c0290b1520d425ce4f62fa48d",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,121 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/StructuredData.tsx",
+      "categories": [
+        "A",
+        "B"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "8b4f91b9698be8c303b37f0132fa6284d132c101647124c602cce17d135af1b4",
+      "currentSha256": "8b4f91b9698be8c303b37f0132fa6284d132c101647124c602cce17d135af1b4",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Shared integration: A service references/styles and B retained portfolio/security context form one tested unit; no C/D/E-secret content is staged.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,124 +1,121 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -1,24 +1,2 @@",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -28 +6,24 @@ export function PersonSchema() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -32 +32,0 @@ export function PersonSchema() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -34,9 +33,0 @@ export function WebSiteSchema() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -44,3 +35,33 @@ export function WebSiteSchema() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -50 +70,0 @@ export function WebSiteSchema() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -52,42 +71,0 @@ export function ProfessionalServiceSchema() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -95,3 +73,22 @@ export function ProfessionalServiceSchema() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -101 +97,0 @@ export function ProfessionalServiceSchema() {",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -107,11 +102,0 @@ export function BreadcrumbSchema({",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -119,3 +104,11 @@ export function BreadcrumbSchema({",
+          "categories": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "header": "@@ -124,0 +118,4 @@ export function BreadcrumbSchema({",
+          "categories": [
+            "A",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/WebsiteRequestForm.tsx",
+      "categories": [
+        "A"
+      ],
+      "statusBefore": " M",
+      "snapshotSha256": "b198046ca165f9c52158272a89a91c6ab2842c69d9d590368801977bec9147cb",
+      "currentSha256": "fadb96544dcbe5c6e3a42cb9ad49a273673ba773ac1e7c8bcd0e09403ee05912",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [
+        {
+          "header": "@@ -1,6 +1,7 @@",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -33,7 +34,7 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -43,14 +44,37 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -58,6 +82,8 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -66,16 +92,27 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -87,12 +124,16 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        }
+      ],
+      "reviewedHunks": [
+        {
+          "header": "@@ -4,2 +4,2 @@ import { useMemo, useState } from \"react\";",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -12 +12 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -13,0 +14 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -16,21 +17 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -43,2 +24,2 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -46 +27 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -50 +31,29 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -52,2 +61,13 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -56 +76 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -60,0 +81,5 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -61,0 +87 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -64 +90 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -68,0 +95,6 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -70,0 +103 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -73,2 +106,11 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -77,3 +119,10 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -82,0 +132 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -85 +135 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -89,0 +140,5 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -91,0 +147 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -93,3 +149,7 @@ export default function WebsiteRequestForm() {",
+          "categories": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/components/WebsiteServiceBlock.tsx",
+      "categories": [
+        "A"
+      ],
+      "statusBefore": "new during consolidation",
+      "snapshotSha256": null,
+      "currentSha256": "85a152eb57cafd650431a4afaf33ddb60da89d38921e921571ed4d9869227a87",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -3,0 +4 @@ import WebsiteMockup from \"@/components/WebsiteMockup\";",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -14 +15 @@ export default function WebsiteServiceBlock() {",
+          "categories": [
+            "A"
+          ]
+        },
+        {
+          "header": "@@ -58 +59 @@ export default function WebsiteServiceBlock() {",
+          "categories": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/lib/contact-policy.ts",
+      "categories": [
+        "B",
+        "E"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "c1805e446802470d5c8e7700a5f1b86b195d220db3045a1c97f1f37400b9b2bb",
+      "currentSha256": "c1805e446802470d5c8e7700a5f1b86b195d220db3045a1c97f1f37400b9b2bb",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed existing configuration or disabled server boundary; no real credentials and no provider activation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,23 @@",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/lib/contact-service.ts",
+      "categories": [
+        "B",
+        "E"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "7aca3ac24bac7447e612c5f0c59f6763e4fc547e82968d9f1ddcad5f45fda35b",
+      "currentSha256": "7aca3ac24bac7447e612c5f0c59f6763e4fc547e82968d9f1ddcad5f45fda35b",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed existing configuration or disabled server boundary; no real credentials and no provider activation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,113 @@",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/src/lib/website-request.ts",
+      "categories": [
+        "A"
+      ],
+      "statusBefore": "new during consolidation",
+      "snapshotSha256": null,
+      "currentSha256": "e345e0a177c177997a3d50793226ec3445500f7a8d68d6bcf4d2761743bdde1f",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,28 @@",
+          "categories": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/tests/contact.test.cjs",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "0ad0a1faf8ec049f7b5fc19bdcf7dcefe354b5c870596649a49e01910357aaa7",
+      "currentSha256": "0ad0a1faf8ec049f7b5fc19bdcf7dcefe354b5c870596649a49e01910357aaa7",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,102 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/tests/load-typescript.cjs",
+      "categories": [
+        "B"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "ff2c78bac8684838cf6478ddebab56a60c78b14e5eb0b34cdb93bcfcd42207c2",
+      "currentSha256": "ff2c78bac8684838cf6478ddebab56a60c78b14e5eb0b34cdb93bcfcd42207c2",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,9 @@",
+          "categories": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/tests/publication.test.mjs",
+      "categories": [
+        "B",
+        "E"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "0401fa75bc0fa06ef43c1a420e682ef6312e43a159e00457c552f3585dbbc78a",
+      "currentSha256": "0401fa75bc0fa06ef43c1a420e682ef6312e43a159e00457c552f3585dbbc78a",
+      "unchangedFromSnapshot": true,
+      "include": true,
+      "note": "Reviewed existing configuration or disabled server boundary; no real credentials and no provider activation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,19 @@",
+          "categories": [
+            "B",
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "portfolio/tests/website-request.test.cjs",
+      "categories": [
+        "A"
+      ],
+      "statusBefore": "new during consolidation",
+      "snapshotSha256": null,
+      "currentSha256": "ba4c1a6d21fc97aafdabb9c59f0a8f38527e7b1f5b4a85f7e07230bd0d0f54c2",
+      "unchangedFromSnapshot": false,
+      "include": true,
+      "note": "Reviewed application integration or supporting documentation.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": [
+        {
+          "header": "@@ -0,0 +1,20 @@",
+          "categories": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "file": "stickerpsd.psd",
+      "categories": [
+        "C"
+      ],
+      "statusBefore": "??",
+      "snapshotSha256": "1b528c67509690d06d9a4ab9c4d527c7c124298b8eeba70b105bcc5ea36d1b42",
+      "currentSha256": "1b528c67509690d06d9a4ab9c4d527c7c124298b8eeba70b105bcc5ea36d1b42",
+      "unchangedFromSnapshot": true,
+      "include": false,
+      "note": "Independent creative source, preserved locally and excluded from commits.",
+      "hunkPolicy": "Single work package; complete reviewed hunks only.",
+      "baselineHunks": [],
+      "reviewedHunks": []
+    }
+  ]
+}

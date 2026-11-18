@@ -77,9 +77,8 @@ provenance and current validation. The earlier notes above describe the retained
 portfolio foundation. The supplied artwork supersedes the earlier homepage
 photography fallback; it does not provide a full identity reference dataset.
 
-The portable social kit is in `brand/MOTIONSWITCH_SOCIAL_KIT.html`. Open it in a
-browser to edit still templates or preview the thirty-second timing study.
-Actual process/result footage must be added in a video editor.
+The optional local social kit at `brand/MOTIONSWITCH_SOCIAL_KIT.html` is separate
+creative work and is not included in the website-service consolidation branch.
 
 ## LUX NOIR v2 validation
 
@@ -150,4 +149,23 @@ The signed challenge needs a minimum 1.2-second age, expires after 10 minutes, a
 
 Node tests cover configuration/release gates, input abuse, consent-free closed behavior, trusted origin/IP, shared limiter failures, challenge signature/expiry, recipient/sender isolation and atomic replay protection. Browser scripts support external local Playwright/axe installations using LUX_NOIR_PLAYWRIGHT_MODULE, LUX_NOIR_AXE_MODULE, LUX_NOIR_CHROME and LUX_NOIR_QA_OUTPUT. Existing verify-lux-noir.cjs covers Chromium/Firefox/WebKit; verify-release.cjs adds contact/legal/reflow checks. Its enabled-form UI fixture uses mocked local responses only and is not an app route or provider-delivery proof.
 
-Runtime npm audit is clean at the audit timestamp. Five high development-chain entries remain around braces through the Next ESLint plugin; no forced major downgrade was applied. Keep auditing before actual release. See docs/SECURITY_AUDIT.md for the exact limitation and docs/LEGAL_RELEASE_CHECKLIST.md for operator gates.
+See [the consolidation report](../docs/PORTFOLIO_WEBSITES_CONSOLIDATION.md) for the current security results and release gates. Older audit and QA documents above are historical evidence and do not certify the current build.
+
+## Website-service consolidation — 18 November 2026
+
+The current consolidation uses the reviewed LUX NOIR / MOTIONSWITCH foundation,
+local fonts and existing disabled contact boundary. The homepage service block
+and desktop Websites link are restored. Website inquiries validate required
+name, email and message fields locally, focus the first error and prepare an
+encoded email draft; they do not call the delivery API or claim delivery.
+
+Next.js and eslint-config-next are pinned to 16.4.6 after the initial 16.4.0
+build reported security advisories. The application has no new runtime package.
+Use the existing lint, typecheck, test, build, verify, verify:ui and verify:release
+commands. `verify:websites` adds the three primary routes at 360, 390, 430, 768
+and 1440px in Chromium and WebKit, using the same external Playwright setup.
+Generated evidence lives in ignored `output/playwright/consolidation/`.
+
+The snapshot, per-file and per-hunk classification, actual validation outcomes,
+rollback instructions and open publication blockers are recorded in the report.
+This is a draft review candidate; no deployment or merge is authorized by it.
